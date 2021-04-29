@@ -212,11 +212,15 @@ api.push({
 })
 api[8].list.push({
     order: '1',
-    desc: '楼盘列表(id, name, cityId, status)',
+    desc: '楼盘简单信息(id,name,cityId,status)(批量)',
 });
 api[8].list.push({
     order: '2',
     desc: '城市下楼盘数量(批量)',
+});
+api[8].list.push({
+    order: '3',
+    desc: '楼盘列表信息',
 });
 api.push({
     alias: 'KafkaDoc',
