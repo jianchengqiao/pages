@@ -234,8 +234,15 @@ api[9].list.push({
     desc: '楼盘操作日志(operation-log)',
 });
 api.push({
-    alias: 'dict',
+    alias: 'error',
     order: '11',
+    link: 'error_code_list',
+    desc: '错误码列表',
+    list: []
+})
+api.push({
+    alias: 'dict',
+    order: '12',
     link: 'dict_list',
     desc: '数据字典',
     list: []
