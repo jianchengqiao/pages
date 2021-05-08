@@ -293,7 +293,7 @@ api[6].list.push({
     desc: '页面配置-功能管理-修改开关',
 });
 api.push({
-    alias: 'EstateApiController',
+    alias: 'InnerApiController',
     order: '8',
     link: '内部服务api(前端禁用)',
     desc: '内部服务API(前端禁用)',
@@ -309,7 +309,19 @@ api[7].list.push({
 });
 api[7].list.push({
     order: '3',
-    desc: '楼盘列表信息',
+    desc: '后台楼盘列表信息(分页)',
+});
+api[7].list.push({
+    order: '4',
+    desc: '集团-小程序绑定关系(全部)',
+});
+api[7].list.push({
+    order: '5',
+    desc: '集团-小程序(groupId-&gt;appid)',
+});
+api[7].list.push({
+    order: '6',
+    desc: '集团-小程序(appid-&gt;groupId)',
 });
 api.push({
     alias: 'KafkaDoc',
