@@ -226,66 +226,70 @@ api[6].list.push({
 });
 api[6].list.push({
     order: '5',
-    desc: '视觉配置-保存主题',
+    desc: '基础信息-提审小程序',
 });
 api[6].list.push({
     order: '6',
-    desc: '视觉配置-获取主题',
+    desc: '视觉配置-保存主题',
 });
 api[6].list.push({
     order: '7',
-    desc: '链接组件-获取链接组件树',
+    desc: '视觉配置-获取主题',
 });
 api[6].list.push({
     order: '8',
-    desc: '链接组件-解析链接组件信息',
+    desc: '链接组件-获取链接组件树',
 });
 api[6].list.push({
     order: '9',
-    desc: '页面配置-首页模块-列表',
+    desc: '链接组件-解析链接组件信息',
 });
 api[6].list.push({
     order: '10',
-    desc: '页面配置-首页模块-编辑',
+    desc: '页面配置-首页模块-列表',
 });
 api[6].list.push({
     order: '11',
-    desc: '页面配置-首页模块-展示/隐藏',
+    desc: '页面配置-首页模块-编辑',
 });
 api[6].list.push({
     order: '12',
-    desc: '页面配置-首页模块-排序',
+    desc: '页面配置-首页模块-展示/隐藏',
 });
 api[6].list.push({
     order: '13',
-    desc: '页面配置-导航菜单-列表',
+    desc: '页面配置-首页模块-排序',
 });
 api[6].list.push({
     order: '14',
-    desc: '页面配置-导航菜单-创建',
+    desc: '页面配置-导航菜单-列表',
 });
 api[6].list.push({
     order: '15',
-    desc: '页面配置-导航菜单-修改',
+    desc: '页面配置-导航菜单-创建',
 });
 api[6].list.push({
     order: '16',
-    desc: '页面配置-导航菜单-展示/隐藏',
+    desc: '页面配置-导航菜单-修改',
 });
 api[6].list.push({
     order: '17',
-    desc: '页面配置-导航菜单-删除',
+    desc: '页面配置-导航菜单-展示/隐藏',
 });
 api[6].list.push({
     order: '18',
-    desc: '页面配置-导航菜单-排序',
+    desc: '页面配置-导航菜单-删除',
 });
 api[6].list.push({
     order: '19',
-    desc: '页面配置-功能管理-获取开关',
+    desc: '页面配置-导航菜单-排序',
 });
 api[6].list.push({
     order: '20',
+    desc: '页面配置-功能管理-获取开关',
+});
+api[6].list.push({
+    order: '21',
     desc: '页面配置-功能管理-修改开关',
 });
 api.push({
@@ -297,7 +301,7 @@ api.push({
 })
 api[7].list.push({
     order: '1',
-    desc: '楼盘简单信息(id,name,cityId,status)(批量)',
+    desc: '楼盘简单信息(批量)',
 });
 api[7].list.push({
     order: '2',
