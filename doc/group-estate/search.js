@@ -226,7 +226,7 @@ api[6].list.push({
 });
 api[6].list.push({
     order: '5',
-    desc: '基础信息-提审小程序',
+    desc: '基础信息-撤回提审',
 });
 api[6].list.push({
     order: '6',
