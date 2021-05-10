@@ -214,19 +214,19 @@ api[6].list.push({
 });
 api[6].list.push({
     order: '2',
-    desc: '基础信息-获取提审发布记录',
-});
-api[6].list.push({
-    order: '3',
     desc: '基础信息-请求授权页面',
 });
 api[6].list.push({
-    order: '4',
+    order: '3',
     desc: '基础信息-提审小程序',
 });
 api[6].list.push({
-    order: '5',
+    order: '4',
     desc: '基础信息-撤回提审',
+});
+api[6].list.push({
+    order: '5',
+    desc: '基础信息-获取提审发布记录',
 });
 api[6].list.push({
     order: '6',
