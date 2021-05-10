@@ -246,7 +246,7 @@ api[6].list.push({
 });
 api[6].list.push({
     order: '10',
-    desc: '页面配置-首页模块-模板',
+    desc: '页面配置-首页模块-模板枚举',
 });
 api[6].list.push({
     order: '11',
@@ -266,7 +266,7 @@ api[6].list.push({
 });
 api[6].list.push({
     order: '15',
-    desc: '页面配置-导航菜单-模板',
+    desc: '页面配置-导航菜单-模板枚举',
 });
 api[6].list.push({
     order: '16',
