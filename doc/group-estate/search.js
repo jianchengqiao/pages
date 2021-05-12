@@ -8,7 +8,11 @@ api.push({
 })
 api[0].list.push({
     order: '1',
-    desc: '接口调用说明',
+    desc: '后台接口调用说明',
+});
+api[0].list.push({
+    order: '2',
+    desc: '小程序接口调用说明',
 });
 api.push({
     alias: 'AppletCommonController',
