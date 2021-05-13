@@ -359,7 +359,7 @@ api.push({
 })
 api[9].list.push({
     order: '1',
-    desc: '楼盘新增删除',
+    desc: '楼盘新增删除(auth)',
 });
 api[9].list.push({
     order: '2',
