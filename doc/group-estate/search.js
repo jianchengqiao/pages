@@ -84,299 +84,310 @@ api[3].list.push({
     desc: '楼盘相册列表',
 });
 api.push({
-    alias: 'EstateController',
+    alias: 'CommonController',
     order: '5',
-    link: '后台-楼盘基础管理',
-    desc: '后台-楼盘基础管理',
+    link: '后台-通用',
+    desc: '后台-通用',
     list: []
 })
 api[4].list.push({
     order: '1',
+    desc: '获取已发布的楼盘idName',
+});
+api.push({
+    alias: 'EstateController',
+    order: '6',
+    link: '后台-楼盘基础管理',
+    desc: '后台-楼盘基础管理',
+    list: []
+})
+api[5].list.push({
+    order: '1',
     desc: '楼盘-获取物业类型枚举',
 });
-api[4].list.push({
+api[5].list.push({
     order: '2',
     desc: '楼盘-创建楼盘',
 });
-api[4].list.push({
+api[5].list.push({
     order: '3',
     desc: '楼盘-修改基本信息',
 });
-api[4].list.push({
+api[5].list.push({
     order: '4',
     desc: '楼盘-获取基本信息',
 });
-api[4].list.push({
+api[5].list.push({
     order: '5',
     desc: '楼盘-修改销售信息',
 });
-api[4].list.push({
+api[5].list.push({
     order: '6',
     desc: '楼盘-获取销售信息',
 });
-api[4].list.push({
+api[5].list.push({
     order: '7',
     desc: '楼盘-获取楼盘列表',
 });
-api[4].list.push({
+api[5].list.push({
     order: '8',
     desc: '楼盘-删除楼盘',
 });
-api[4].list.push({
+api[5].list.push({
     order: '9',
     desc: '楼盘-发布/停止发布',
 });
-api[4].list.push({
+api[5].list.push({
     order: '10',
     desc: '楼盘-排序楼盘',
 });
-api[4].list.push({
+api[5].list.push({
     order: '11',
     desc: '楼盘-获取排序楼盘列表',
 });
-api[4].list.push({
+api[5].list.push({
     order: '12',
     desc: '户型-创建户型',
 });
-api[4].list.push({
+api[5].list.push({
     order: '13',
     desc: '户型-修改户型',
 });
-api[4].list.push({
+api[5].list.push({
     order: '14',
     desc: '户型-删除户型',
 });
-api[4].list.push({
+api[5].list.push({
     order: '15',
     desc: '户型-获取户型列表',
 });
-api[4].list.push({
+api[5].list.push({
     order: '16',
     desc: '户型-排序户型',
 });
-api[4].list.push({
+api[5].list.push({
     order: '17',
     desc: '相册-获取相册类别枚举',
 });
-api[4].list.push({
+api[5].list.push({
     order: '18',
     desc: '相册-创建相册图片',
 });
-api[4].list.push({
+api[5].list.push({
     order: '19',
     desc: '相册-创建相册图片(批量)',
 });
-api[4].list.push({
+api[5].list.push({
     order: '20',
     desc: '相册-删除相册图片',
 });
-api[4].list.push({
+api[5].list.push({
     order: '21',
     desc: '相册-获取相册图片列表',
 });
-api[4].list.push({
+api[5].list.push({
     order: '22',
     desc: '相册-排序相册图片',
 });
-api[4].list.push({
+api[5].list.push({
     order: '23',
     desc: '动态-创建动态',
 });
-api[4].list.push({
+api[5].list.push({
     order: '24',
     desc: '动态-修改动态',
 });
-api[4].list.push({
+api[5].list.push({
     order: '25',
     desc: '动态-删除动态',
 });
-api[4].list.push({
+api[5].list.push({
     order: '26',
     desc: '动态-获取动态列表',
 });
 api.push({
     alias: 'DisplayRuleController',
-    order: '6',
+    order: '7',
     link: '后台-楼盘展示规则',
     desc: '后台-楼盘展示规则',
     list: []
 })
-api[5].list.push({
+api[6].list.push({
     order: '1',
     desc: '修改展示数量',
 });
-api[5].list.push({
+api[6].list.push({
     order: '2',
     desc: '获取展示规则列表',
 });
 api.push({
     alias: 'ManageController',
-    order: '7',
+    order: '8',
     link: '后台-小程序管理',
     desc: '后台-小程序管理',
     list: []
 })
-api[6].list.push({
+api[7].list.push({
     order: '1',
     desc: '基础信息-获取基础信息',
 });
-api[6].list.push({
+api[7].list.push({
     order: '2',
     desc: '基础信息-请求授权页面',
 });
-api[6].list.push({
+api[7].list.push({
     order: '3',
     desc: '基础信息-提审小程序',
 });
-api[6].list.push({
+api[7].list.push({
     order: '4',
     desc: '基础信息-撤回提审',
 });
-api[6].list.push({
+api[7].list.push({
     order: '5',
     desc: '基础信息-获取提审发布记录',
 });
-api[6].list.push({
+api[7].list.push({
     order: '6',
     desc: '视觉配置-保存主题',
 });
-api[6].list.push({
+api[7].list.push({
     order: '7',
     desc: '视觉配置-获取主题',
 });
-api[6].list.push({
+api[7].list.push({
     order: '8',
     desc: '链接组件-获取链接组件树',
 });
-api[6].list.push({
+api[7].list.push({
     order: '9',
     desc: '链接组件-解析链接组件信息',
 });
-api[6].list.push({
+api[7].list.push({
     order: '10',
     desc: '页面配置-首页模块-模板枚举',
 });
-api[6].list.push({
+api[7].list.push({
     order: '11',
     desc: '页面配置-首页模块-列表',
 });
-api[6].list.push({
+api[7].list.push({
     order: '12',
     desc: '页面配置-首页模块-编辑',
 });
-api[6].list.push({
+api[7].list.push({
     order: '13',
     desc: '页面配置-首页模块-展示/隐藏',
 });
-api[6].list.push({
+api[7].list.push({
     order: '14',
     desc: '页面配置-首页模块-排序',
 });
-api[6].list.push({
+api[7].list.push({
     order: '15',
     desc: '页面配置-导航菜单-模板枚举',
 });
-api[6].list.push({
+api[7].list.push({
     order: '16',
     desc: '页面配置-导航菜单-列表',
 });
-api[6].list.push({
+api[7].list.push({
     order: '17',
     desc: '页面配置-导航菜单-创建',
 });
-api[6].list.push({
+api[7].list.push({
     order: '18',
     desc: '页面配置-导航菜单-修改',
 });
-api[6].list.push({
+api[7].list.push({
     order: '19',
     desc: '页面配置-导航菜单-展示/隐藏',
 });
-api[6].list.push({
+api[7].list.push({
     order: '20',
     desc: '页面配置-导航菜单-删除',
 });
-api[6].list.push({
+api[7].list.push({
     order: '21',
     desc: '页面配置-导航菜单-排序',
 });
-api[6].list.push({
+api[7].list.push({
     order: '22',
     desc: '页面配置-功能管理-获取开关',
 });
-api[6].list.push({
+api[7].list.push({
     order: '23',
     desc: '页面配置-功能管理-修改开关',
 });
 api.push({
     alias: 'InnerApiController',
-    order: '8',
+    order: '9',
     link: '内部服务api(前端禁用)',
     desc: '内部服务API(前端禁用)',
     list: []
 })
-api[7].list.push({
+api[8].list.push({
     order: '1',
     desc: '楼盘简单信息(批量)',
 });
-api[7].list.push({
+api[8].list.push({
     order: '2',
     desc: '城市下楼盘数量(批量)',
 });
-api[7].list.push({
+api[8].list.push({
     order: '3',
     desc: '后台楼盘列表信息(分页)',
 });
-api[7].list.push({
+api[8].list.push({
     order: '4',
     desc: '集团-小程序绑定关系(全部)',
 });
-api[7].list.push({
+api[8].list.push({
     order: '5',
     desc: '集团-小程序(groupId-&gt;appid)',
 });
-api[7].list.push({
+api[8].list.push({
     order: '6',
     desc: '集团-小程序(appid-&gt;groupId)',
 });
 api.push({
     alias: 'KafkaDoc',
-    order: '9',
+    order: '10',
     link: 'kafka消息文档',
     desc: 'Kafka消息文档',
     list: []
 })
-api[8].list.push({
+api[9].list.push({
     order: '1',
     desc: '楼盘新增删除(estate-add-del)',
 });
-api[8].list.push({
+api[9].list.push({
     order: '2',
     desc: '楼盘操作日志(operation-log)',
 });
 api.push({
     alias: 'error',
-    order: '10',
+    order: '11',
     link: 'error_code_list',
     desc: '错误码列表',
     list: []
 })
 api.push({
     alias: 'dict',
-    order: '11',
+    order: '12',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[10].list.push({
+api[11].list.push({
     order: '1',
     desc: '相册类型',
 });
-api[10].list.push({
+api[11].list.push({
     order: '2',
     desc: '首页模块模板',
 });
-api[10].list.push({
+api[11].list.push({
     order: '3',
     desc: '导航菜单模板',
 });
