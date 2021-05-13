@@ -359,11 +359,15 @@ api.push({
 })
 api[9].list.push({
     order: '1',
-    desc: '楼盘新增删除(estate-add-del)',
+    desc: '楼盘新增删除',
 });
 api[9].list.push({
     order: '2',
-    desc: '楼盘操作日志(operation-log)',
+    desc: '楼盘新增删除(crm)',
+});
+api[9].list.push({
+    order: '3',
+    desc: '楼盘操作日志',
 });
 api.push({
     alias: 'error',
