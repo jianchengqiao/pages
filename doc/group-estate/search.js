@@ -313,11 +313,19 @@ api[7].list.push({
 });
 api[7].list.push({
     order: '22',
-    desc: '页面配置-功能管理-获取开关',
+    desc: '页面配置-底部导航-获取列表',
 });
 api[7].list.push({
     order: '23',
-    desc: '页面配置-功能管理-修改开关',
+    desc: '页面配置-底部导航-保存并提审',
+});
+api[7].list.push({
+    order: '24',
+    desc: '功能管理-获取开关',
+});
+api[7].list.push({
+    order: '25',
+    desc: '功能管理-修改开关',
 });
 api.push({
     alias: 'InnerApiController',
