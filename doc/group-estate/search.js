@@ -336,7 +336,7 @@ api.push({
 })
 api[8].list.push({
     order: '1',
-    desc: '楼盘简单信息(批量)',
+    desc: '楼盘简单信息',
 });
 api[8].list.push({
     order: '2',
