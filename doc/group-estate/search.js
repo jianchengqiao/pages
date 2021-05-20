@@ -25,6 +25,10 @@ api[1].list.push({
     order: '1',
     desc: '首字母分组的城市列表',
 });
+api[1].list.push({
+    order: '2',
+    desc: '根据定位返回城市',
+});
 api.push({
     alias: 'AppletHomeController',
     order: '3',
@@ -38,10 +42,14 @@ api[2].list.push({
 });
 api[2].list.push({
     order: '2',
-    desc: '视觉配置主题',
+    desc: '基础配置信息',
 });
 api[2].list.push({
     order: '3',
+    desc: '视觉配置主题',
+});
+api[2].list.push({
+    order: '4',
     desc: '功能管理弹窗开关',
 });
 api.push({
