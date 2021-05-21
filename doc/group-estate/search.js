@@ -398,7 +398,7 @@ api.push({
 })
 api[10].list.push({
     order: '1',
-    desc: '模拟审核成功',
+    desc: '模拟审核通过',
 });
 api[10].list.push({
     order: '2',
