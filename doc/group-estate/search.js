@@ -29,6 +29,10 @@ api[1].list.push({
     order: '2',
     desc: '根据定位返回城市',
 });
+api[1].list.push({
+    order: '3',
+    desc: '获取tabbar配置信息',
+});
 api.push({
     alias: 'AppletHomeController',
     order: '3',
