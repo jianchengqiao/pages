@@ -390,28 +390,43 @@ api[9].list.push({
     desc: '楼盘操作日志',
 });
 api.push({
-    alias: 'error',
+    alias: 'ToolController',
     order: '11',
+    link: '测试工具',
+    desc: '测试工具',
+    list: []
+})
+api[10].list.push({
+    order: '1',
+    desc: '模拟审核成功',
+});
+api[10].list.push({
+    order: '2',
+    desc: '模拟审核驳回',
+});
+api.push({
+    alias: 'error',
+    order: '12',
     link: 'error_code_list',
     desc: '错误码列表',
     list: []
 })
 api.push({
     alias: 'dict',
-    order: '12',
+    order: '13',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[11].list.push({
+api[12].list.push({
     order: '1',
     desc: '相册类型',
 });
-api[11].list.push({
+api[12].list.push({
     order: '2',
     desc: '首页模块模板',
 });
-api[11].list.push({
+api[12].list.push({
     order: '3',
     desc: '导航菜单模板',
 });
