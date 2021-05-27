@@ -232,6 +232,14 @@ api[6].list.push({
     order: '2',
     desc: '获取展示规则列表',
 });
+api[6].list.push({
+    order: '3',
+    desc: '排序楼盘',
+});
+api[6].list.push({
+    order: '4',
+    desc: '获取排序楼盘列表',
+});
 api.push({
     alias: 'ManageController',
     order: '8',
@@ -369,6 +377,10 @@ api[8].list.push({
 api[8].list.push({
     order: '6',
     desc: '集团-小程序(appid-&gt;groupId)',
+});
+api[8].list.push({
+    order: '7',
+    desc: '顾问分享楼盘信息',
 });
 api.push({
     alias: 'KafkaDoc',
