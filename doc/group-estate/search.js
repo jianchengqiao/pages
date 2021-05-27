@@ -391,11 +391,11 @@ api.push({
 })
 api[9].list.push({
     order: '1',
-    desc: '楼盘新增删除(auth)',
+    desc: '楼盘信息变更(auth)',
 });
 api[9].list.push({
     order: '2',
-    desc: '楼盘新增删除(crm)',
+    desc: '楼盘信息变更(crm)',
 });
 api[9].list.push({
     order: '3',
@@ -404,8 +404,8 @@ api[9].list.push({
 api.push({
     alias: 'ToolController',
     order: '11',
-    link: '测试工具',
-    desc: '测试工具',
+    link: '工具箱',
+    desc: '工具箱',
     list: []
 })
 api[10].list.push({
@@ -415,6 +415,14 @@ api[10].list.push({
 api[10].list.push({
     order: '2',
     desc: '模拟审核驳回',
+});
+api[10].list.push({
+    order: '3',
+    desc: '提交代码到体验版',
+});
+api[10].list.push({
+    order: '4',
+    desc: '提审小程序',
 });
 api.push({
     alias: 'error',
