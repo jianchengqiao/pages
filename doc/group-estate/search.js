@@ -104,10 +104,18 @@ api.push({
 })
 api[4].list.push({
     order: '1',
-    desc: '获取已发布的楼盘idName',
+    desc: '选择楼盘列表(已发布)',
+});
+api[4].list.push({
+    order: '2',
+    desc: '链接组件-获取树',
+});
+api[4].list.push({
+    order: '3',
+    desc: '链接组件-解析url',
 });
 api.push({
-    alias: 'EstateController',
+    alias: 'A1EstateController',
     order: '6',
     link: '后台-楼盘基础管理',
     desc: '后台-楼盘基础管理',
@@ -151,74 +159,66 @@ api[5].list.push({
 });
 api[5].list.push({
     order: '10',
-    desc: '楼盘-排序楼盘',
-});
-api[5].list.push({
-    order: '11',
-    desc: '楼盘-获取排序楼盘列表',
-});
-api[5].list.push({
-    order: '12',
     desc: '户型-创建户型',
 });
 api[5].list.push({
-    order: '13',
+    order: '11',
     desc: '户型-修改户型',
 });
 api[5].list.push({
-    order: '14',
+    order: '12',
     desc: '户型-删除户型',
 });
 api[5].list.push({
-    order: '15',
+    order: '13',
     desc: '户型-获取户型列表',
 });
 api[5].list.push({
-    order: '16',
+    order: '14',
     desc: '户型-排序户型',
 });
 api[5].list.push({
-    order: '17',
+    order: '15',
     desc: '相册-获取相册类别枚举',
 });
 api[5].list.push({
-    order: '18',
+    order: '16',
     desc: '相册-创建相册图片',
 });
 api[5].list.push({
-    order: '19',
+    order: '17',
     desc: '相册-创建相册图片(批量)',
 });
 api[5].list.push({
-    order: '20',
+    order: '18',
     desc: '相册-删除相册图片',
 });
 api[5].list.push({
-    order: '21',
+    order: '19',
     desc: '相册-获取相册图片列表',
 });
 api[5].list.push({
-    order: '22',
+    order: '20',
     desc: '相册-排序相册图片',
 });
 api[5].list.push({
-    order: '23',
+    order: '21',
     desc: '动态-创建动态',
 });
 api[5].list.push({
-    order: '24',
+    order: '22',
     desc: '动态-修改动态',
 });
 api[5].list.push({
-    order: '25',
+    order: '23',
     desc: '动态-删除动态',
 });
 api[5].list.push({
-    order: '26',
+    order: '24',
     desc: '动态-获取动态列表',
 });
 api.push({
-    alias: 'DisplayRuleController',
+    alias: 'A2DisplayRuleController',
     order: '7',
     link: '后台-楼盘展示规则',
     desc: '后台-楼盘展示规则',
@@ -241,212 +241,258 @@ api[6].list.push({
     desc: '获取排序楼盘列表',
 });
 api.push({
-    alias: 'ManageController',
+    alias: 'B1AuthAuditController',
     order: '8',
-    link: '后台-小程序管理',
-    desc: '后台-小程序管理',
+    link: '后台-小程序管理-提审发布',
+    desc: '后台-小程序管理-提审发布',
     list: []
 })
 api[7].list.push({
     order: '1',
-    desc: '基础信息-获取基础信息',
+    desc: '基础信息',
 });
 api[7].list.push({
     order: '2',
-    desc: '基础信息-请求授权页面',
+    desc: '请求授权',
 });
 api[7].list.push({
     order: '3',
-    desc: '基础信息-提审小程序',
+    desc: '提审',
 });
 api[7].list.push({
     order: '4',
-    desc: '基础信息-撤回提审',
+    desc: '撤回提审',
 });
 api[7].list.push({
     order: '5',
-    desc: '基础信息-获取提审发布记录',
+    desc: '提审发布记录',
 });
-api[7].list.push({
-    order: '6',
-    desc: '视觉配置-保存主题',
-});
-api[7].list.push({
-    order: '7',
-    desc: '视觉配置-获取主题',
-});
-api[7].list.push({
-    order: '8',
-    desc: '链接组件-获取链接组件树',
-});
-api[7].list.push({
+api.push({
+    alias: 'B2ThemeController',
     order: '9',
-    desc: '链接组件-解析链接组件信息',
+    link: '后台-小程序管理-视觉配置',
+    desc: '后台-小程序管理-视觉配置',
+    list: []
+})
+api[8].list.push({
+    order: '1',
+    desc: '保存主题',
 });
-api[7].list.push({
+api[8].list.push({
+    order: '2',
+    desc: '获取主题',
+});
+api.push({
+    alias: 'B3HomeViewController',
     order: '10',
-    desc: '页面配置-首页模块-模板枚举',
+    link: '后台-小程序管理-页面配置-首页模块',
+    desc: '后台-小程序管理-页面配置-首页模块',
+    list: []
+})
+api[9].list.push({
+    order: '1',
+    desc: '模板枚举',
 });
-api[7].list.push({
+api[9].list.push({
+    order: '2',
+    desc: '列表',
+});
+api[9].list.push({
+    order: '3',
+    desc: '编辑',
+});
+api[9].list.push({
+    order: '4',
+    desc: '展示/隐藏',
+});
+api[9].list.push({
+    order: '5',
+    desc: '排序',
+});
+api.push({
+    alias: 'B4MenuController',
     order: '11',
-    desc: '页面配置-首页模块-列表',
+    link: '后台-小程序管理-页面配置-导航菜单',
+    desc: '后台-小程序管理-页面配置-导航菜单',
+    list: []
+})
+api[10].list.push({
+    order: '1',
+    desc: '模板枚举',
 });
-api[7].list.push({
+api[10].list.push({
+    order: '2',
+    desc: '列表',
+});
+api[10].list.push({
+    order: '3',
+    desc: '创建',
+});
+api[10].list.push({
+    order: '4',
+    desc: '修改',
+});
+api[10].list.push({
+    order: '5',
+    desc: '展示/隐藏',
+});
+api[10].list.push({
+    order: '6',
+    desc: '删除',
+});
+api[10].list.push({
+    order: '7',
+    desc: '排序',
+});
+api.push({
+    alias: 'B5TabbarController',
     order: '12',
-    desc: '页面配置-首页模块-编辑',
+    link: '后台-小程序管理-页面配置-底部导航',
+    desc: '后台-小程序管理-页面配置-底部导航',
+    list: []
+})
+api[11].list.push({
+    order: '1',
+    desc: '列表',
 });
-api[7].list.push({
+api[11].list.push({
+    order: '2',
+    desc: '保存并提审',
+});
+api.push({
+    alias: 'B6SwitchController',
     order: '13',
-    desc: '页面配置-首页模块-展示/隐藏',
+    link: '后台-小程序管理-功能管理',
+    desc: '后台-小程序管理-功能管理',
+    list: []
+})
+api[12].list.push({
+    order: '1',
+    desc: '获取',
 });
-api[7].list.push({
+api[12].list.push({
+    order: '2',
+    desc: '修改',
+});
+api.push({
+    alias: 'LinkController',
     order: '14',
-    desc: '页面配置-首页模块-排序',
+    link: '后台-小程序管理-链接组件',
+    desc: '后台-小程序管理-链接组件',
+    list: []
+})
+api[13].list.push({
+    order: '1',
+    desc: '链接组件-获取树',
 });
-api[7].list.push({
-    order: '15',
-    desc: '页面配置-导航菜单-模板枚举',
-});
-api[7].list.push({
-    order: '16',
-    desc: '页面配置-导航菜单-列表',
-});
-api[7].list.push({
-    order: '17',
-    desc: '页面配置-导航菜单-创建',
-});
-api[7].list.push({
-    order: '18',
-    desc: '页面配置-导航菜单-修改',
-});
-api[7].list.push({
-    order: '19',
-    desc: '页面配置-导航菜单-展示/隐藏',
-});
-api[7].list.push({
-    order: '20',
-    desc: '页面配置-导航菜单-删除',
-});
-api[7].list.push({
-    order: '21',
-    desc: '页面配置-导航菜单-排序',
-});
-api[7].list.push({
-    order: '22',
-    desc: '页面配置-底部导航-获取列表',
-});
-api[7].list.push({
-    order: '23',
-    desc: '页面配置-底部导航-保存并提审',
-});
-api[7].list.push({
-    order: '24',
-    desc: '功能管理-获取开关',
-});
-api[7].list.push({
-    order: '25',
-    desc: '功能管理-修改开关',
+api[13].list.push({
+    order: '2',
+    desc: '链接组件-解析url',
 });
 api.push({
     alias: 'InnerApiController',
-    order: '9',
+    order: '15',
     link: '内部服务api(前端禁用)',
     desc: '内部服务API(前端禁用)',
     list: []
 })
-api[8].list.push({
+api[14].list.push({
     order: '1',
     desc: '楼盘简单信息',
 });
-api[8].list.push({
+api[14].list.push({
     order: '2',
     desc: '城市下楼盘数量(批量)',
 });
-api[8].list.push({
+api[14].list.push({
     order: '3',
     desc: '后台楼盘列表信息(分页)',
 });
-api[8].list.push({
+api[14].list.push({
     order: '4',
     desc: '集团-小程序绑定关系(全部)',
 });
-api[8].list.push({
+api[14].list.push({
     order: '5',
     desc: '集团-小程序(groupId-&gt;appid)',
 });
-api[8].list.push({
+api[14].list.push({
     order: '6',
     desc: '集团-小程序(appid-&gt;groupId)',
 });
-api[8].list.push({
+api[14].list.push({
     order: '7',
     desc: '顾问分享楼盘信息',
 });
 api.push({
     alias: 'KafkaDoc',
-    order: '10',
+    order: '16',
     link: 'kafka消息文档',
     desc: 'Kafka消息文档',
     list: []
 })
-api[9].list.push({
+api[15].list.push({
     order: '1',
     desc: '楼盘信息变更(auth)',
 });
-api[9].list.push({
+api[15].list.push({
     order: '2',
     desc: '楼盘信息变更(crm)',
 });
-api[9].list.push({
+api[15].list.push({
     order: '3',
     desc: '楼盘操作日志',
 });
 api.push({
     alias: 'ToolController',
-    order: '11',
+    order: '17',
     link: '工具箱',
     desc: '工具箱',
     list: []
 })
-api[10].list.push({
+api[16].list.push({
     order: '1',
     desc: '模拟审核通过',
 });
-api[10].list.push({
+api[16].list.push({
     order: '2',
     desc: '模拟审核驳回',
 });
-api[10].list.push({
+api[16].list.push({
     order: '3',
     desc: '提交代码到体验版',
 });
-api[10].list.push({
+api[16].list.push({
     order: '4',
     desc: '提审小程序',
 });
+api[16].list.push({
+    order: '5',
+    desc: '顾问小程序授权',
+});
 api.push({
     alias: 'error',
-    order: '12',
+    order: '18',
     link: 'error_code_list',
     desc: '错误码列表',
     list: []
 })
 api.push({
     alias: 'dict',
-    order: '13',
+    order: '19',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[12].list.push({
+api[18].list.push({
     order: '1',
     desc: '相册类型',
 });
-api[12].list.push({
+api[18].list.push({
     order: '2',
     desc: '首页模块模板',
 });
-api[12].list.push({
+api[18].list.push({
     order: '3',
     desc: '导航菜单模板',
 });
