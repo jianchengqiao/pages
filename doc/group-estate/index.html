@@ -19,8 +19,8 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 </head>
-<body class="book toc2 toc-left">
-<!--<body>-->
+<!--<body class="book toc2 toc-left">-->
+<body>
 <div class="center"
      style="width: 500px; height: 300px; float: top; background-color: #f8f8f7; text-align: center; margin-top: 200px">
     <div style="height: 90px;"></div>
@@ -51,11 +51,10 @@
         var sel = document.getElementById("host");
         var text = sel.options[sel.selectedIndex].text;
         $.get('https://jianchengqiao.github.io/pages/doc/group-estate/doc.html', function (b) {
-            // document.body.className = "book toc2 toc-left";
+            document.body.className = "book toc2 toc-left";
             // document.body.innerHTML = b.substring(b.indexOf("start")+start.length,b.indexOf("</body>"));
-            document.body.innerHTML = b.replaceAll("focus-dev",text);
-                // .replaceAll("class=\"json\"","class=\"json hljs\"")
-                // .replaceAll("class=\"bash\"","class=\"bash hljs\"");
+            document.body.innerHTML = b.substring(b.indexOf("start") + start.length, b.indexOf("</body>"))
+                .replaceAll("{{focus}}", text);
         });
     }
 </script>
