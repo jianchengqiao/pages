@@ -14,6 +14,10 @@ api[0].list.push({
     order: '2',
     desc: '小程序接口调用说明',
 });
+api[0].list.push({
+    order: '3',
+    desc: 'Postman导入本文档',
+});
 api.push({
     alias: 'AppletCommonController',
     order: '2',
