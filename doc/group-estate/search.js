@@ -108,14 +108,18 @@ api.push({
 })
 api[4].list.push({
     order: '1',
-    desc: '选择楼盘列表(已发布)',
+    desc: '楼盘列表(已发布的)',
 });
 api[4].list.push({
     order: '2',
-    desc: '链接组件-获取树',
+    desc: '城市列表(有楼盘的&有权限的)',
 });
 api[4].list.push({
     order: '3',
+    desc: '链接组件-获取树',
+});
+api[4].list.push({
+    order: '4',
     desc: '链接组件-解析url',
 });
 api.push({
@@ -414,18 +418,22 @@ api[14].list.push({
 });
 api[14].list.push({
     order: '4',
-    desc: '集团-小程序绑定关系(全部)',
+    desc: '集团的全部楼盘列表',
 });
 api[14].list.push({
     order: '5',
-    desc: '集团-小程序(groupId-&gt;appid)',
+    desc: '集团-小程序绑定关系(全部)',
 });
 api[14].list.push({
     order: '6',
-    desc: '集团-小程序(appid-&gt;groupId)',
+    desc: '集团-小程序(groupId-&gt;appid)',
 });
 api[14].list.push({
     order: '7',
+    desc: '集团-小程序(appid-&gt;groupId)',
+});
+api[14].list.push({
+    order: '8',
     desc: '顾问分享楼盘信息',
 });
 api.push({
@@ -464,14 +472,22 @@ api[16].list.push({
 });
 api[16].list.push({
     order: '3',
-    desc: '提交代码到体验版',
+    desc: '获取体验版二维码',
 });
 api[16].list.push({
     order: '4',
-    desc: '提审小程序',
+    desc: '添加体验成员',
 });
 api[16].list.push({
     order: '5',
+    desc: '提交代码到体验版',
+});
+api[16].list.push({
+    order: '6',
+    desc: '迭代发版提审小程序',
+});
+api[16].list.push({
+    order: '7',
     desc: '顾问小程序授权',
 });
 api.push({
