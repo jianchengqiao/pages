@@ -414,7 +414,7 @@ api[14].list.push({
 });
 api[14].list.push({
     order: '3',
-    desc: '后台楼盘列表信息(分页)',
+    desc: '团队管理楼盘列表(分页)',
 });
 api[14].list.push({
     order: '4',
