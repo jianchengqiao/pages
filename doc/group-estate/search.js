@@ -50,14 +50,18 @@ api[2].list.push({
 });
 api[2].list.push({
     order: '2',
-    desc: '基础配置信息',
+    desc: '',
 });
 api[2].list.push({
     order: '3',
-    desc: '视觉配置主题',
+    desc: '基础配置信息',
 });
 api[2].list.push({
     order: '4',
+    desc: '视觉配置主题',
+});
+api[2].list.push({
+    order: '5',
     desc: '功能管理弹窗开关',
 });
 api.push({
@@ -445,14 +449,10 @@ api.push({
 })
 api[15].list.push({
     order: '1',
-    desc: '楼盘信息变更(auth)',
+    desc: '楼盘信息变更',
 });
 api[15].list.push({
     order: '2',
-    desc: '楼盘信息变更(crm)',
-});
-api[15].list.push({
-    order: '3',
     desc: '楼盘操作日志',
 });
 api.push({
