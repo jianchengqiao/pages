@@ -261,10 +261,6 @@ api[7].list.push({
 });
 api[7].list.push({
     order: '4',
-    desc: '撤回提审',
-});
-api[7].list.push({
-    order: '5',
     desc: '提审发布记录',
 });
 api.push({
@@ -375,117 +371,144 @@ api[12].list.push({
     desc: '修改',
 });
 api.push({
-    alias: 'InnerApiController',
+    alias: 'LinkController',
     order: '14',
-    link: '内部服务api(前端禁用)',
-    desc: '内部服务API(前端禁用)',
+    link: '后台-小程序管理-链接组件',
+    desc: '后台-小程序管理-链接组件',
     list: []
 })
 api[13].list.push({
     order: '1',
-    desc: '楼盘简单信息',
+    desc: '链接组件-获取树',
 });
 api[13].list.push({
     order: '2',
+    desc: '链接组件-解析url',
+});
+api.push({
+    alias: 'InnerApiController',
+    order: '15',
+    link: '内部服务api(前端禁用)',
+    desc: '内部服务API(前端禁用)',
+    list: []
+})
+api[14].list.push({
+    order: '1',
+    desc: '楼盘简单信息',
+});
+api[14].list.push({
+    order: '2',
     desc: '城市下楼盘数量(批量)',
 });
-api[13].list.push({
+api[14].list.push({
     order: '3',
     desc: '团队管理楼盘列表(分页)',
 });
-api[13].list.push({
+api[14].list.push({
     order: '4',
     desc: '集团的全部楼盘列表',
 });
-api[13].list.push({
+api[14].list.push({
     order: '5',
     desc: '集团-小程序绑定关系(全部)',
 });
-api[13].list.push({
+api[14].list.push({
     order: '6',
     desc: '集团-小程序(groupId-&gt;appid)',
 });
-api[13].list.push({
+api[14].list.push({
     order: '7',
     desc: '集团-小程序(appid-&gt;groupId)',
 });
-api[13].list.push({
+api[14].list.push({
     order: '8',
     desc: '顾问分享楼盘信息',
 });
 api.push({
     alias: 'KafkaDoc',
-    order: '15',
+    order: '16',
     link: 'kafka消息文档',
     desc: 'Kafka消息文档',
     list: []
 })
-api[14].list.push({
+api[15].list.push({
     order: '1',
     desc: '楼盘信息变更',
 });
-api[14].list.push({
+api[15].list.push({
     order: '2',
     desc: '楼盘操作日志',
 });
 api.push({
     alias: 'ToolController',
-    order: '16',
+    order: '17',
     link: '工具箱',
     desc: '工具箱',
     list: []
 })
-api[15].list.push({
+api[16].list.push({
     order: '1',
     desc: '模拟审核通过',
 });
-api[15].list.push({
+api[16].list.push({
     order: '2',
     desc: '模拟审核驳回',
 });
-api[15].list.push({
+api[16].list.push({
     order: '3',
     desc: '获取体验版二维码',
 });
-api[15].list.push({
+api[16].list.push({
     order: '4',
     desc: '添加体验成员',
 });
-api[15].list.push({
+api[16].list.push({
     order: '5',
-    desc: '提交代码到体验版',
+    desc: '提交模板代码到体验版',
 });
-api[15].list.push({
+api[16].list.push({
     order: '6',
-    desc: '迭代发版提审小程序',
+    desc: '代码模板列表',
 });
-api[15].list.push({
+api[16].list.push({
     order: '7',
+    desc: '选中模版',
+});
+api[16].list.push({
+    order: '8',
+    desc: '系统更新自动提审',
+});
+api[16].list.push({
+    order: '9',
+    desc: '撤回提审',
+});
+api[16].list.push({
+    order: '10',
     desc: '顾问小程序授权',
 });
 api.push({
     alias: 'error',
-    order: '17',
+    order: '18',
     link: 'error_code_list',
     desc: '错误码列表',
     list: []
 })
 api.push({
     alias: 'dict',
-    order: '18',
+    order: '19',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[17].list.push({
+api[18].list.push({
     order: '1',
     desc: '相册类型',
 });
-api[17].list.push({
+api[18].list.push({
     order: '2',
     desc: '首页模块模板',
 });
-api[17].list.push({
+api[18].list.push({
     order: '3',
     desc: '导航菜单模板',
 });
