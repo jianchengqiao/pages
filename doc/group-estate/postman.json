@@ -1,8 +1,8 @@
 {
   "info": {
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_postman_id": "8180e177-aa66-4283-8612-305c10024f43",
-    "name": "集团营销平台接口文档 v2.4"
+    "_postman_id": "358a9f71-4237-4028-ac24-d1986ee0d222",
+    "name": "集团营销平台接口文档 v3.0"
   },
   "item": [
     {
@@ -12,9 +12,6 @@
           "name": "后台接口调用说明",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/doc1",
               "protocol": "https",
@@ -30,15 +27,12 @@
             "description": "后台接口调用说明",
             "header": []
           },
-          "description": "\u003cbr\u003e\u003ch4\u003e后台接口调用说明\u003c/h4\u003e\u003cul\u003e\u003cli\u003e所有接口都经过\u003cem\u003e\u003cstrong\u003egroup-auth\u003c/strong\u003e\u003c/em\u003e\u003cstrong\u003e \u003c/strong\u003e服务路由，不能直接调 \u003cstrong\u003e\u003cem\u003egroup-estate\u003c/em\u003e\u003c/strong\u003e 服务\u003c/li\u003e\u003cli\u003e所有非 \u003cstrong\u003eGET \u003c/strong\u003e请求经过 \u003cem\u003e\u003cstrong\u003egroup-auth\u003c/strong\u003e\u003c/em\u003e\u003cstrong\u003e \u003c/strong\u003e服务路由后，会带上 \u003cem\u003e\u003cstrong\u003eoperatorId,\u003c/strong\u003e \u003cstrong\u003eoperatorName \u003c/strong\u003e\u003c/em\u003e参数，开发无需关心操作人，只需要传 \u003cem\u003e\u003cstrong\u003ecookie\u003c/strong\u003e\u003c/em\u003e 或 \u003cem\u003e\u003cstrong\u003etoken\u003c/strong\u003e\u003c/em\u003e\u003c/li\u003e\u003cli\u003e所有 \u003cem\u003e\u003cstrong\u003ebody\u003c/strong\u003e\u003c/em\u003e 里需要传 \u003cem\u003e\u003cstrong\u003egroupId\u003c/strong\u003e\u003c/em\u003e 的，都可以拼在 \u003cem\u003e\u003cstrong\u003equery\u003c/strong\u003e\u003c/em\u003e 上，后端会自动处理\u003c/li\u003e\u003c/ul\u003e\u003cli\u003e路由规则：\u003c/li\u003e\u003c/ul\u003e\u003cblockquote\u003e\u003cp\u003e\u003cspan class\u003d\"nolink\" style\u003d\"color: rgb(128,128,128);\"\u003ehttp://\u003cstrong\u003egroup-estate\u003c/strong\u003e.focus-test.cn/backstage/estates?groupId\u003dxxx\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style\u003d\"color: rgb(128,128,128);\"\u003e\u003d\u003d\u0026gt; \u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style\u003d\"color: rgb(128,128,128);\"\u003e\u003cspan class\u003d\"nolink\"\u003ehttp://\u003cstrong\u003egroup-auth\u003c/strong\u003e.focus-test.cn\u003cstrong\u003e\u003cspan style\u003d\"color: rgb(51,51,51);\"\u003e/group/estate\u003c/span\u003e\u003c/strong\u003e/backstage/estates?groupId\u003dxxx\u003c/span\u003e\u003cspan class\u003d\"nolink\"\u003e \u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/blockquote\u003e\u003cul\u003e\u003cbr\u003e"
+          "description": "<br><h4>后台接口调用说明</h4><ul><li>所有接口都经过<em><strong>group-auth</strong></em><strong> </strong>服务路由，不能直接调 <strong><em>group-estate</em></strong> 服务</li><li>所有非 <strong>GET </strong>请求经过 <em><strong>group-auth</strong></em><strong> </strong>服务路由后，会带上 <em><strong>operatorId,</strong> <strong>operatorName </strong></em>参数，开发无需关心操作人，只需要传 <em><strong>cookie</strong></em> 或 <em><strong>token</strong></em></li><li>所有 <em><strong>body</strong></em> 里需要传 <em><strong>groupId</strong></em> 的，都可以拼在 <em><strong>query</strong></em> 上，后端会自动处理</li></ul><li>路由规则：</li></ul><blockquote><p><span class=\"nolink\" style=\"color: rgb(128,128,128);\">http://<strong>group-estate</strong>.focus-test.cn/backstage/estates?groupId=xxx</span></p><p><span style=\"color: rgb(128,128,128);\">==&gt; </span></p><p><span style=\"color: rgb(128,128,128);\"><span class=\"nolink\">http://<strong>group-auth</strong>.focus-test.cn<strong><span style=\"color: rgb(51,51,51);\">/group/estate</span></strong>/backstage/estates?groupId=xxx</span><span class=\"nolink\"> </span></span></p></blockquote><ul><br>"
         },
         {
           "name": "小程序接口调用说明",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/doc2",
               "protocol": "https",
@@ -54,16 +48,12 @@
             "description": "小程序接口调用说明",
             "header": []
           },
-          "description": "\u003cbr\u003e\u003ch4\u003e小程序接口调用说明\u003c/h4\u003e\u003cul\u003e\u003cli\u003e所有的请求都需要在\u003cem\u003e\u003cstrong\u003equery\u003c/strong\u003e\u003c/em\u003e 或者 \u003cem\u003e\u003cstrong\u003eheader\u003c/strong\u003e\u003c/em\u003e 加上 \u003cem\u003e\u003cstrong\u003eappid\u003c/strong\u003e\u003c/em\u003e ，后端系统会自动映射成 \u003cstrong\u003e\u003cem\u003egroupId\u003c/em\u003e\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e文档中所有 \u003cem\u003e\u003cstrong\u003equery\u003c/strong\u003e\u003c/em\u003e\u003cstrong\u003e \u003c/strong\u003e中需要传 \u003cstrong\u003e\u003cem\u003egroupId\u003c/em\u003e \u003c/strong\u003e的，基于上条规则都可以忽略不传\u003c/li\u003e\u003c/ul\u003e\u003cbr\u003e"
+          "description": "<br><h4>小程序接口调用说明</h4><ul><li>所有的请求都需要在<em><strong>query</strong></em> 或者 <em><strong>header</strong></em> 加上 <em><strong>appid</strong></em> ，后端系统会自动映射成 <strong><em>groupId</em></strong></li><li>文档中所有 <em><strong>query</strong></em><strong> </strong>中需要传 <strong><em>groupId</em> </strong>的，基于上条规则都可以忽略不传</li></ul><br>"
         },
         {
           "name": "Postman导入本文档",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/doc3",
               "protocol": "https",
@@ -79,7 +69,7 @@
             "description": "Postman导入本文档",
             "header": []
           },
-          "description": "复制json内容\u003d\u003d\u003e Postman \u003d\u003d\u003e Import \u003d\u003d\u003e Raw text， \u003ca href\u003d\u0027postman.json\u0027\u003e点此查看postman.json\u003c/a\u003e"
+          "description": "复制json内容==> Postman ==> Import ==> Raw text， <a href='postman.json'>点此查看postman.json</a>"
         }
       ]
     },
@@ -90,19 +80,8 @@
           "name": "首字母分组的城市列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/common/city-group?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/common/city-group?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -130,37 +109,8 @@
           "name": "根据定位返回城市",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": " appid",
-                  "value": "wx210adb39fc36b767"
-                },
-                {
-                  "key": "adcode",
-                  "type": "text",
-                  "description": "城市adcode",
-                  "value": "140400"
-                },
-                {
-                  "key": "lng",
-                  "type": "text",
-                  "description": "   经度",
-                  "value": "113.113556"
-                },
-                {
-                  "key": "lat",
-                  "type": "text",
-                  "description": "   纬度",
-                  "value": "36.191112"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/common/location?adcode\u003d140400\u0026lng\u003d113.113556\u0026lat\u003d36.191112\u0026appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/common/location?appid=wx210adb39fc36b767&lat=36.191112&adcode=140400&lng=113.113556",
               "protocol": "https",
               "path": [
                 "applet",
@@ -203,19 +153,8 @@
           "name": "获取tabbar配置信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/common/tabbars?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/common/tabbars?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -248,25 +187,8 @@
           "name": "首页模块列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": " appid",
-                  "value": "wx210adb39fc36b767"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": "城市id",
-                  "value": "101"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/home-views?cityId\u003d101\u0026appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/home-views?appid=wx210adb39fc36b767&cityId=101",
               "protocol": "https",
               "path": [
                 "applet",
@@ -298,25 +220,8 @@
           "name": "基础配置信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": "链接城市id",
-                  "value": "101"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/basic?appid\u003dwx210adb39fc36b767\u0026cityId\u003d101",
+              "raw": "https://group-estate.::focus.cn/applet/basic?appid=wx210adb39fc36b767&cityId=101",
               "protocol": "https",
               "path": [
                 "applet",
@@ -353,43 +258,8 @@
           "name": "楼盘列表（含搜索）",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": "  城市id",
-                  "value": "101"
-                },
-                {
-                  "key": "keyword",
-                  "type": "text",
-                  "description": " 搜索关键词",
-                  "value": "mjagu9"
-                },
-                {
-                  "key": "pageNo",
-                  "type": "text",
-                  "description": "  默认1",
-                  "value": "1"
-                },
-                {
-                  "key": "pageSize",
-                  "type": "text",
-                  "description": "默认10",
-                  "value": "10"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/?pageSize\u003d10\u0026pageNo\u003d1\u0026appid\u003dwx210adb39fc36b767\u0026keyword\u003dmjagu9\u0026cityId\u003d101",
+              "raw": "https://group-estate.::focus.cn/applet/estates/?keyword=j3i8vl&cityId=101&appid=wx210adb39fc36b767&pageNo=1&pageSize=10",
               "protocol": "https",
               "path": [
                 "applet",
@@ -412,7 +282,7 @@
                 },
                 {
                   "key": "keyword",
-                  "value": "odxhge",
+                  "value": "c78xze",
                   "description": " 搜索关键词"
                 },
                 {
@@ -437,19 +307,8 @@
           "name": "楼盘首页集合信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/home?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/home?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -484,19 +343,8 @@
           "name": "楼盘头信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/head?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/head?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -531,19 +379,8 @@
           "name": "楼盘详细信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/detail?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/detail?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -578,19 +415,8 @@
           "name": "周边配套信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/surrounding?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/surrounding?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -625,19 +451,8 @@
           "name": "楼盘户型列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/layouts?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/layouts?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -672,19 +487,8 @@
           "name": "楼盘动态列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/dynamics?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/dynamics?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -719,19 +523,8 @@
           "name": "楼盘相册列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "   appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/applet/estates/2/albums?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/applet/estates/2/albums?appid=wx210adb39fc36b767",
               "protocol": "https",
               "path": [
                 "applet",
@@ -771,19 +564,8 @@
           "name": "楼盘列表(已发布的)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/common/estates/published?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/common/estates/published?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -809,22 +591,11 @@
           "description": "楼盘列表(已发布的)"
         },
         {
-          "name": "城市列表(有楼盘的\u0026有权限的)",
+          "name": "城市列表(有楼盘的&有权限的)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "permission",
-                  "type": "text",
-                  "description": "权限id，3:楼盘管理，11:团队管理等",
-                  "value": "3"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/common/estates/cities/authed?permission\u003d3",
+              "raw": "https://group-estate.::focus.cn/backstage/common/estates/cities/authed?permission=3",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -845,18 +616,15 @@
               ],
               "variable": []
             },
-            "description": "城市列表(有楼盘的\u0026有权限的)",
+            "description": "城市列表(有楼盘的&有权限的)",
             "header": []
           },
-          "description": "城市列表(有楼盘的\u0026有权限的)"
+          "description": "城市列表(有楼盘的&有权限的)"
         },
         {
           "name": "链接组件-获取树",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/common/links",
               "protocol": "https",
@@ -882,7 +650,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"link\": \"obso8y\"\n}",
+              "raw": "{\n\t\"link\": \"ese2oo\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -918,9 +686,6 @@
           "name": "楼盘-获取物业类型枚举",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/estates/property-types",
               "protocol": "https",
@@ -946,7 +711,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 177,\n\t\"cityId\": 539,\n\t\"name\": \"乐驹.邱\",\n\t\"district\": 569,\n\t\"address\": \"邱栋2号， 东莞， 鄂 139331\",\n\t\"lng\": \"h3i7as\",\n\t\"lat\": \"hjhcea\",\n\t\"hotline\": \"1bb01c\",\n\t\"propertyTypes\": \"mey0hp\",\n\t\"areaUpperLimit\": 17.21,\n\t\"areaLowerLimit\": 34.77,\n\t\"images\": \"t5xjsx\",\n\t\"radius\": 62.34,\n\t\"developerName\": \"乐驹.邱\",\n\t\"tags\": \"t1q0h6\",\n\t\"introduction\": \"rqx70h\"\n}",
+              "raw": "{\n\t\"groupId\": 215,\n\t\"cityId\": 566,\n\t\"name\": \"博超.卢\",\n\t\"district\": 476,\n\t\"address\": \"Apt. 611 邵旁32号， 江阴， 澳 018320\",\n\t\"lng\": \"v8txss\",\n\t\"lat\": \"itjcdo\",\n\t\"hotline\": \"e9t0rh\",\n\t\"propertyTypes\": \"ti7syu\",\n\t\"areaUpperLimit\": 31.02,\n\t\"areaLowerLimit\": 69.58,\n\t\"images\": \"f0wjsq\",\n\t\"radius\": 82.49,\n\t\"developerName\": \"博超.卢\",\n\t\"tags\": \"hqczzr\",\n\t\"introduction\": \"q95of1\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -978,7 +743,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 13,\n\t\"cityId\": 939,\n\t\"name\": \"乐驹.邱\",\n\t\"district\": 85,\n\t\"address\": \"邱栋2号， 东莞， 鄂 139331\",\n\t\"lng\": \"sf17tt\",\n\t\"lat\": \"xlgr3q\",\n\t\"hotline\": \"t018ch\",\n\t\"propertyTypes\": \"zndey9\",\n\t\"areaUpperLimit\": 26.09,\n\t\"areaLowerLimit\": 38.22,\n\t\"images\": \"h0cg18\",\n\t\"radius\": 41.26,\n\t\"developerName\": \"乐驹.邱\",\n\t\"tags\": \"s7bl2v\",\n\t\"introduction\": \"ueu13c\"\n}",
+              "raw": "{\n\t\"groupId\": 433,\n\t\"cityId\": 8,\n\t\"name\": \"博超.卢\",\n\t\"district\": 60,\n\t\"address\": \"Apt. 611 邵旁32号， 江阴， 澳 018320\",\n\t\"lng\": \"v46gii\",\n\t\"lat\": \"2tfa5z\",\n\t\"hotline\": \"q6d1bc\",\n\t\"propertyTypes\": \"gn7eub\",\n\t\"areaUpperLimit\": 52.84,\n\t\"areaLowerLimit\": 94.93,\n\t\"images\": \"mzz0kw\",\n\t\"radius\": 96.90,\n\t\"developerName\": \"博超.卢\",\n\t\"tags\": \"mtsx1k\",\n\t\"introduction\": \"bkgw5t\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -986,7 +751,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/442/basic-info?",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/51/basic-info?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1001,7 +766,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "528",
+                  "value": "343",
                   "description": "楼盘id"
                 }
               ]
@@ -1015,12 +780,8 @@
           "name": "楼盘-获取基本信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/80/basic-info",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/767/basic-info",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1035,7 +796,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "934",
+                  "value": "3",
                   "description": "楼盘id"
                 }
               ]
@@ -1051,7 +812,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"priceType\": 425,\n\t\"avePrice\": 90.25,\n\t\"maxPrice\": 64.00,\n\t\"minPrice\": 89.53,\n\t\"saleStatus\": 959,\n\t\"openingDate\": \"2021-06-24\",\n\t\"saleStage\": \"lf8ail\"\n}",
+              "raw": "{\n\t\"priceType\": 390,\n\t\"avePrice\": 4.83,\n\t\"maxPrice\": 77.74,\n\t\"minPrice\": 23.09,\n\t\"saleStatus\": 182,\n\t\"openingDate\": \"2021-07-08\",\n\t\"saleStage\": \"42ss99\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1059,7 +820,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/333/sales-info?",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/100/sales-info?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1074,7 +835,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "500",
+                  "value": "301",
                   "description": "楼盘id"
                 }
               ]
@@ -1088,12 +849,8 @@
           "name": "楼盘-获取销售信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/809/sales-info",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/861/sales-info",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1108,7 +865,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "150",
+                  "value": "449",
                   "description": "楼盘id"
                 }
               ]
@@ -1122,61 +879,8 @@
           "name": "楼盘-获取楼盘列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "pageNo",
-                  "type": "text",
-                  "description": "分页当前页面，从1开始，默认1",
-                  "value": "508"
-                },
-                {
-                  "key": "pageSize",
-                  "type": "text",
-                  "description": "分页页面大小，默认10",
-                  "value": "10"
-                },
-                {
-                  "key": "auth",
-                  "type": "text",
-                  "description": "是否查权限",
-                  "value": "true"
-                },
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "450"
-                },
-                {
-                  "key": "status",
-                  "type": "text",
-                  "description": "发布状态，0.未发布，1.停止发布，2.已发布",
-                  "value": "266"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": "城市id",
-                  "value": "496"
-                },
-                {
-                  "key": "regionId",
-                  "type": "text",
-                  "description": "区域id",
-                  "value": "619"
-                },
-                {
-                  "key": "keyword",
-                  "type": "text",
-                  "description": "搜索关键词",
-                  "value": "imjy6c"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/?cityId\u003d496\u0026pageSize\u003d10\u0026keyword\u003dimjy6c\u0026groupId\u003d450\u0026regionId\u003d619\u0026pageNo\u003d508\u0026status\u003d266\u0026auth\u003dtrue",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/?groupId=153&cityId=962&regionId=463&pageSize=10&keyword=ji2baq&status=30&auth=true&pageNo=526",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1189,7 +893,7 @@
               "query": [
                 {
                   "key": "pageNo",
-                  "value": "659",
+                  "value": "824",
                   "description": "分页当前页面，从1开始，默认1"
                 },
                 {
@@ -1199,27 +903,27 @@
                 },
                 {
                   "key": "groupId",
-                  "value": "157",
+                  "value": "307",
                   "description": "集团id"
                 },
                 {
                   "key": "status",
-                  "value": "470",
+                  "value": "966",
                   "description": "发布状态，0.未发布，1.停止发布，2.已发布"
                 },
                 {
                   "key": "cityId",
-                  "value": "816",
+                  "value": "172",
                   "description": "城市id"
                 },
                 {
                   "key": "regionId",
-                  "value": "755",
+                  "value": "826",
                   "description": "区域id"
                 },
                 {
                   "key": "keyword",
-                  "value": "t6i1a2",
+                  "value": "e936s3",
                   "description": "搜索关键词"
                 }
               ],
@@ -1234,12 +938,8 @@
           "name": "楼盘-删除楼盘",
           "request": {
             "method": "DELETE",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/282",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/277",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1253,7 +953,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "554",
+                  "value": "684",
                   "description": "楼盘id"
                 }
               ]
@@ -1269,7 +969,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"status\": 283\n}",
+              "raw": "{\n\t\"status\": 708\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1277,7 +977,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/957/status?",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/71/status?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1292,7 +992,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "658",
+                  "value": "372",
                   "description": "楼盘id"
                 }
               ]
@@ -1308,7 +1008,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"id\": 840,\n\t\"estateId\": 199,\n\t\"name\": \"乐驹.邱\",\n\t\"minArea\": 406,\n\t\"maxArea\": 24,\n\t\"images\": \"01zr1k\",\n\t\"bedroom\": 475,\n\t\"livingroom\": 339,\n\t\"toilet\": 455,\n\t\"kitchen\": 860\n}",
+              "raw": "{\n\t\"id\": 249,\n\t\"estateId\": 236,\n\t\"name\": \"博超.卢\",\n\t\"minArea\": 901,\n\t\"maxArea\": 788,\n\t\"images\": \"gk2d9m\",\n\t\"bedroom\": 92,\n\t\"livingroom\": 568,\n\t\"toilet\": 134,\n\t\"kitchen\": 170\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1347,7 +1047,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"id\": 103,\n\t\"estateId\": 684,\n\t\"name\": \"乐驹.邱\",\n\t\"minArea\": 552,\n\t\"maxArea\": 457,\n\t\"images\": \"brzcnl\",\n\t\"bedroom\": 329,\n\t\"livingroom\": 726,\n\t\"toilet\": 98,\n\t\"kitchen\": 757\n}",
+              "raw": "{\n\t\"id\": 706,\n\t\"estateId\": 700,\n\t\"name\": \"博超.卢\",\n\t\"minArea\": 245,\n\t\"maxArea\": 404,\n\t\"images\": \"40rg1i\",\n\t\"bedroom\": 99,\n\t\"livingroom\": 401,\n\t\"toilet\": 885,\n\t\"kitchen\": 979\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1355,7 +1055,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/layouts/470?",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/layouts/575?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1376,7 +1076,7 @@
                 },
                 {
                   "key": "id",
-                  "value": "729",
+                  "value": "870",
                   "description": "      户型id"
                 }
               ]
@@ -1390,12 +1090,8 @@
           "name": "户型-删除户型",
           "request": {
             "method": "DELETE",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/layouts/626",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/layouts/914",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1416,7 +1112,7 @@
                 },
                 {
                   "key": "id",
-                  "value": "851",
+                  "value": "463",
                   "description": "      户型id"
                 }
               ]
@@ -1430,10 +1126,6 @@
           "name": "户型-获取户型列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/estates/2/layouts",
               "protocol": "https",
@@ -1466,7 +1158,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"sortedIds\": [\n\t\t614\n\t]\n}",
+              "raw": "{\n\t\"sortedIds\": [\n\t\t757\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1504,10 +1196,6 @@
           "name": "相册-获取相册类别枚举",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/estates/2/albums/types",
               "protocol": "https",
@@ -1541,7 +1229,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"id\": 152,\n\t\"estateId\": 198,\n\t\"type\": 77,\n\t\"url\": \"www.xn---xn--5i5a-4j9pl79y.info\",\n\t\"order\": 998\n}",
+              "raw": "{\n\t\"id\": 949,\n\t\"estateId\": 874,\n\t\"type\": 889,\n\t\"url\": \"www.xn---xn--vxs-v47v.com\",\n\t\"order\": 323\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1580,7 +1268,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"type\": 871,\n\t\"urls\": [\n\t\t\"yweco2\"\n\t]\n}",
+              "raw": "{\n\t\"type\": 458,\n\t\"urls\": [\n\t\t\"jvmxww\"\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1618,12 +1306,8 @@
           "name": "相册-删除相册图片",
           "request": {
             "method": "DELETE",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/albums/160",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/albums/678",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1644,7 +1328,7 @@
                 },
                 {
                   "key": "id",
-                  "value": "557",
+                  "value": "724",
                   "description": "      动态id"
                 }
               ]
@@ -1658,19 +1342,8 @@
           "name": "相册-获取相册图片列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "type",
-                  "type": "text",
-                  "description": "    相册类型，1效果图，2实景图，3样板间，4交通图，5周边配套图",
-                  "value": "149"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/albums?type\u003d149",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/albums?type=89",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1684,7 +1357,7 @@
               "query": [
                 {
                   "key": "type",
-                  "value": "278",
+                  "value": "392",
                   "description": "    相册类型，1效果图，2实景图，3样板间，4交通图，5周边配套图"
                 }
               ],
@@ -1707,7 +1380,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"type\": 568,\n\t\"sortedIds\": [\n\t\t283\n\t]\n}",
+              "raw": "{\n\t\"type\": 417,\n\t\"sortedIds\": [\n\t\t843\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1747,7 +1420,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"id\": 747,\n\t\"estateId\": 262,\n\t\"title\": \"azmcxg\",\n\t\"content\": \"rieaon\",\n\t\"time\": \"2021-06-24\"\n}",
+              "raw": "{\n\t\"id\": 233,\n\t\"estateId\": 683,\n\t\"title\": \"0tegu4\",\n\t\"content\": \"k4wa9k\",\n\t\"time\": \"2021-07-08\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1786,7 +1459,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"id\": 403,\n\t\"estateId\": 886,\n\t\"title\": \"au4nvp\",\n\t\"content\": \"ryxmxk\",\n\t\"time\": \"2021-06-24\"\n}",
+              "raw": "{\n\t\"id\": 230,\n\t\"estateId\": 263,\n\t\"title\": \"4rytgh\",\n\t\"content\": \"agvxzv\",\n\t\"time\": \"2021-07-08\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1794,7 +1467,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/dynamics/331?",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/dynamics/365?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1810,7 +1483,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "172",
+                  "value": "824",
                   "description": "      动态id"
                 },
                 {
@@ -1829,12 +1502,8 @@
           "name": "动态-删除动态",
           "request": {
             "method": "DELETE",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/dynamics/125",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/dynamics/70",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1855,7 +1524,7 @@
                 },
                 {
                   "key": "id",
-                  "value": "475",
+                  "value": "831",
                   "description": "      动态id"
                 }
               ]
@@ -1869,25 +1538,8 @@
           "name": "动态-获取动态列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "pageNo",
-                  "type": "text",
-                  "description": "  默认1",
-                  "value": "1"
-                },
-                {
-                  "key": "pageSize",
-                  "type": "text",
-                  "description": "默认10",
-                  "value": "10"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/estates/2/dynamics?pageNo\u003d1\u0026pageSize\u003d10",
+              "raw": "https://group-estate.::focus.cn/backstage/estates/2/dynamics?pageSize=10&pageNo=1",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1934,7 +1586,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"showCount\": 720\n}",
+              "raw": "{\n\t\"showCount\": 802\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1942,7 +1594,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/display-rules/869?",
+              "raw": "https://group-estate.::focus.cn/backstage/display-rules/35?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -1956,7 +1608,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "573",
+                  "value": "3",
                   "description": "条目id"
                 }
               ]
@@ -1970,49 +1622,8 @@
           "name": "获取展示规则列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "pageNo",
-                  "type": "text",
-                  "description": "分页当前页面，从1开始，默认1",
-                  "value": "510"
-                },
-                {
-                  "key": "pageSize",
-                  "type": "text",
-                  "description": "分页页面大小，默认10",
-                  "value": "10"
-                },
-                {
-                  "key": "auth",
-                  "type": "text",
-                  "description": "是否查权限",
-                  "value": "true"
-                },
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "114"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": "城市id",
-                  "value": "592"
-                },
-                {
-                  "key": "regionId",
-                  "type": "text",
-                  "description": "区域id",
-                  "value": "551"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/display-rules/?pageSize\u003d10\u0026auth\u003dtrue\u0026pageNo\u003d510\u0026groupId\u003d114\u0026regionId\u003d551\u0026cityId\u003d592",
+              "raw": "https://group-estate.::focus.cn/backstage/display-rules/?regionId=622&pageNo=780&pageSize=10&cityId=602&groupId=961&auth=true",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2025,7 +1636,7 @@
               "query": [
                 {
                   "key": "pageNo",
-                  "value": "266",
+                  "value": "55",
                   "description": "分页当前页面，从1开始，默认1"
                 },
                 {
@@ -2035,17 +1646,17 @@
                 },
                 {
                   "key": "groupId",
-                  "value": "716",
+                  "value": "769",
                   "description": "集团id"
                 },
                 {
                   "key": "cityId",
-                  "value": "469",
+                  "value": "624",
                   "description": "城市id"
                 },
                 {
                   "key": "regionId",
-                  "value": "709",
+                  "value": "790",
                   "description": "区域id"
                 }
               ],
@@ -2062,7 +1673,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 910,\n\t\"cityId\": 506,\n\t\"sortedIds\": [\n\t\t930\n\t]\n}",
+              "raw": "{\n\t\"groupId\": 863,\n\t\"cityId\": 404,\n\t\"sortedIds\": [\n\t\t69\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2092,25 +1703,8 @@
           "name": "获取排序楼盘列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": " 城市id",
-                  "value": "101"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/display-rules/order?cityId\u003d101\u0026groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/display-rules/order?groupId=619580209&cityId=101",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2148,19 +1742,8 @@
           "name": "基础信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/applets/info?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/applets/info?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2255,19 +1838,8 @@
           "name": "提审发布记录",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/applets/records?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/applets/records?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2303,7 +1875,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 941,\n\t\"mode\": 414,\n\t\"head\": \"1yg601\",\n\t\"body\": \"ff4zht\",\n\t\"themeColor\": \"n70jr0\",\n\t\"naviColor\": \"0bxof6\",\n\t\"naviSelected\": \"jn4gjf\",\n\t\"naviUnselected\": \"3ekgfy\",\n\t\"updaterName\": \"乐驹.邱\",\n\t\"updateTime\": \"2021-06-24\"\n}",
+              "raw": "{\n\t\"groupId\": 592,\n\t\"mode\": 805,\n\t\"head\": \"51jcub\",\n\t\"body\": \"lqriw2\",\n\t\"themeColor\": \"dhq8gx\",\n\t\"naviColor\": \"e5u5bo\",\n\t\"naviSelected\": \"ume8l7\",\n\t\"naviUnselected\": \"7roj3m\",\n\t\"updaterName\": \"博超.卢\",\n\t\"updateTime\": \"2021-07-08\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2333,19 +1905,8 @@
           "name": "获取主题",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/themes?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/themes?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2378,9 +1939,6 @@
           "name": "模板枚举",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/manages/home-views/enums",
               "protocol": "https",
@@ -2399,25 +1957,14 @@
             "description": "模板枚举",
             "header": []
           },
-          "description": "枚举响应示例直接\u003ca href\u003d\u0027http://group-estate.focus-dev.cn/backstage/manages/home-views/enums\u0027\u003e查看此处\u003c/a\u003e"
+          "description": "枚举响应示例直接<a href='http://group-estate.focus-dev.cn/backstage/manages/home-views/enums'>查看此处</a>"
         },
         {
           "name": "列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/home-views?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/home-views?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2447,7 +1994,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"title\": \"b4dwcj\",\n\t\"comment\": \"jszajq\"\n}",
+              "raw": "{\n\t\"title\": \"8x6iuj\",\n\t\"comment\": \"hrcd1h\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2455,7 +2002,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/home-views/664?",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/home-views/504?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2470,7 +2017,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "266",
+                  "value": "885",
                   "description": "首页模块id"
                 }
               ]
@@ -2486,7 +2033,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"enable\": 680\n}",
+              "raw": "{\n\t\"enable\": 44\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2494,7 +2041,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/home-views/24/enable?",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/home-views/845/enable?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2510,7 +2057,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "240",
+                  "value": "62",
                   "description": "首页模块id"
                 }
               ]
@@ -2526,7 +2073,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 777,\n\t\"sortedIds\": [\n\t\t582\n\t]\n}",
+              "raw": "{\n\t\"groupId\": 432,\n\t\"sortedIds\": [\n\t\t311\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2562,9 +2109,6 @@
           "name": "模板枚举",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/manages/menus/enums",
               "protocol": "https",
@@ -2583,25 +2127,14 @@
             "description": "模板枚举",
             "header": []
           },
-          "description": "枚举响应示例直接\u003ca href\u003d\u0027http://group-estate.focus-dev.cn/backstage/manages/menus/enums\u0027\u003e查看此处\u003c/a\u003e"
+          "description": "枚举响应示例直接<a href='http://group-estate.focus-dev.cn/backstage/manages/menus/enums'>查看此处</a>"
         },
         {
           "name": "列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/menus?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/menus?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2631,7 +2164,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"link\": \"wgzumk\",\n\t\"linkId\": 269,\n\t\"linkName\": \"乐驹.邱\",\n\t\"appid\": \"39\",\n\t\"path\": \"dqjhay\",\n\t\"estateId\": 996,\n\t\"estateName\": \"乐驹.邱\",\n\t\"cityId\": 538,\n\t\"cityName\": \"乐驹.邱\",\n\t\"groupId\": 781,\n\t\"type\": 36,\n\t\"name\": \"乐驹.邱\",\n\t\"image\": \"k5ioaz\",\n\t\"comment\": \"9q2j3p\"\n}",
+              "raw": "{\n\t\"link\": \"2wl241\",\n\t\"linkId\": 789,\n\t\"linkName\": \"博超.卢\",\n\t\"appid\": \"196\",\n\t\"path\": \"zd48fl\",\n\t\"estateId\": 509,\n\t\"estateName\": \"博超.卢\",\n\t\"cityId\": 576,\n\t\"cityName\": \"博超.卢\",\n\t\"groupId\": 20,\n\t\"type\": 929,\n\t\"name\": \"博超.卢\",\n\t\"image\": \"knrpvd\",\n\t\"comment\": \"yq9gho\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2663,7 +2196,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"link\": \"konoum\",\n\t\"linkId\": 394,\n\t\"linkName\": \"乐驹.邱\",\n\t\"appid\": \"39\",\n\t\"path\": \"fd48ln\",\n\t\"estateId\": 143,\n\t\"estateName\": \"乐驹.邱\",\n\t\"cityId\": 446,\n\t\"cityName\": \"乐驹.邱\",\n\t\"groupId\": 76,\n\t\"type\": 575,\n\t\"name\": \"乐驹.邱\",\n\t\"image\": \"lteokb\",\n\t\"comment\": \"eudckk\"\n}",
+              "raw": "{\n\t\"link\": \"9b6cx9\",\n\t\"linkId\": 103,\n\t\"linkName\": \"博超.卢\",\n\t\"appid\": \"196\",\n\t\"path\": \"hf1r9p\",\n\t\"estateId\": 154,\n\t\"estateName\": \"博超.卢\",\n\t\"cityId\": 432,\n\t\"cityName\": \"博超.卢\",\n\t\"groupId\": 206,\n\t\"type\": 827,\n\t\"name\": \"博超.卢\",\n\t\"image\": \"ft8wpf\",\n\t\"comment\": \"hwzhf8\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2671,7 +2204,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/menus/571?",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/menus/965?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2686,7 +2219,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "596",
+                  "value": "689",
                   "description": "菜单id"
                 }
               ]
@@ -2702,7 +2235,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"enable\": 320\n}",
+              "raw": "{\n\t\"enable\": 569\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2710,7 +2243,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/menus/747/enable?",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/menus/849/enable?",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2726,7 +2259,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "173",
+                  "value": "458",
                   "description": "菜单id"
                 }
               ]
@@ -2740,12 +2273,8 @@
           "name": "删除",
           "request": {
             "method": "DELETE",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/menus/772",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/menus/637",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2760,7 +2289,7 @@
               "variable": [
                 {
                   "key": "id",
-                  "value": "43",
+                  "value": "572",
                   "description": "菜单id"
                 }
               ]
@@ -2776,7 +2305,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 215,\n\t\"sortedIds\": [\n\t\t530\n\t]\n}",
+              "raw": "{\n\t\"groupId\": 517,\n\t\"sortedIds\": [\n\t\t729\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2812,19 +2341,8 @@
           "name": "列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/tabbars?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/tabbars?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2854,7 +2372,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 41,\n\t\"list\": [\n\t\t{\n\t\t\t\"link\": \"nuz2d5\",\n\t\t\t\"linkId\": 655,\n\t\t\t\"linkName\": \"乐驹.邱\",\n\t\t\t\"appid\": \"39\",\n\t\t\t\"path\": \"ktrgvs\",\n\t\t\t\"estateId\": 564,\n\t\t\t\"estateName\": \"乐驹.邱\",\n\t\t\t\"cityId\": 984,\n\t\t\t\"cityName\": \"乐驹.邱\",\n\t\t\t\"flag\": 6,\n\t\t\t\"name\": \"乐驹.邱\",\n\t\t\t\"iconNormal\": \"nzqzqe\",\n\t\t\t\"iconSelected\": \"ut9pay\"\n\t\t}\n\t]\n}",
+              "raw": "{\n\t\"groupId\": 533,\n\t\"list\": [\n\t\t{\n\t\t\t\"link\": \"kfacyg\",\n\t\t\t\"linkId\": 614,\n\t\t\t\"linkName\": \"博超.卢\",\n\t\t\t\"appid\": \"196\",\n\t\t\t\"path\": \"3pauu2\",\n\t\t\t\"estateId\": 777,\n\t\t\t\"estateName\": \"博超.卢\",\n\t\t\t\"cityId\": 695,\n\t\t\t\"cityName\": \"博超.卢\",\n\t\t\t\"flag\": 5,\n\t\t\t\"name\": \"博超.卢\",\n\t\t\t\"iconNormal\": \"snxuaa\",\n\t\t\t\"iconSelected\": \"edfx32\"\n\t\t}\n\t]\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2889,19 +2407,8 @@
           "name": "获取",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/backstage/manages/switches?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/backstage/manages/switches?groupId=619580209",
               "protocol": "https",
               "path": [
                 "backstage",
@@ -2931,7 +2438,7 @@
             "method": "PUT",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"groupId\": 161,\n\t\"loginDialog\": 694,\n\t\"infoDialog\": 511\n}",
+              "raw": "{\n\t\"groupId\": 303,\n\t\"loginDialog\": 760,\n\t\"infoDialog\": 962\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2966,9 +2473,6 @@
           "name": "链接组件-获取树",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/backstage/manages/links",
               "protocol": "https",
@@ -2994,7 +2498,7 @@
             "method": "POST",
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"link\": \"wpulgz\"\n}",
+              "raw": "{\n\t\"link\": \"5vwfpf\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -3030,37 +2534,8 @@
           "name": "楼盘简单信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                },
-                {
-                  "key": "cityIds",
-                  "type": "text",
-                  "description": " 城市id，逗号隔开",
-                  "value": "101,102"
-                },
-                {
-                  "key": "ids",
-                  "type": "text",
-                  "description": "    楼盘id，逗号隔开",
-                  "value": "uhqob4"
-                },
-                {
-                  "key": "status",
-                  "type": "text",
-                  "description": " 发布状态，0.未发布，1.停止发布，2.已发布",
-                  "value": "627"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/estates/simple?cityIds\u003d101,102\u0026status\u003d627\u0026groupId\u003d619580209\u0026ids\u003duhqob4",
+              "raw": "https://group-estate.::focus.cn/api/estates/simple?cityIds=101,102&ids=jazecv&status=511&groupId=619580209",
               "protocol": "https",
               "path": [
                 "api",
@@ -3083,12 +2558,12 @@
                 },
                 {
                   "key": "ids",
-                  "value": "5jfhee",
+                  "value": "n4i1vj",
                   "description": "    楼盘id，逗号隔开"
                 },
                 {
                   "key": "status",
-                  "value": "806",
+                  "value": "687",
                   "description": " 发布状态，0.未发布，1.停止发布，2.已发布"
                 }
               ],
@@ -3103,31 +2578,8 @@
           "name": "城市下楼盘数量(批量)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                },
-                {
-                  "key": "cityIds",
-                  "type": "text",
-                  "description": "城市id，逗号隔开",
-                  "value": "101,102"
-                },
-                {
-                  "key": "status",
-                  "type": "text",
-                  "description": " 发布状态，0.未发布，1.停止发布，2.已发布",
-                  "value": "961"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/estates/count-by-city?groupId\u003d619580209\u0026cityIds\u003d101,102\u0026status\u003d961",
+              "raw": "https://group-estate.::focus.cn/api/estates/count-by-city?status=941&cityIds=101,102&groupId=619580209",
               "protocol": "https",
               "path": [
                 "api",
@@ -3150,7 +2602,7 @@
                 },
                 {
                   "key": "status",
-                  "value": "643",
+                  "value": "414",
                   "description": " 发布状态，0.未发布，1.停止发布，2.已发布"
                 }
               ],
@@ -3165,61 +2617,8 @@
           "name": "团队管理楼盘列表(分页)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "pageNo",
-                  "type": "text",
-                  "description": "分页当前页面，从1开始，默认1",
-                  "value": "213"
-                },
-                {
-                  "key": "pageSize",
-                  "type": "text",
-                  "description": "分页页面大小，默认10",
-                  "value": "10"
-                },
-                {
-                  "key": "auth",
-                  "type": "text",
-                  "description": "是否查权限",
-                  "value": "true"
-                },
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "419"
-                },
-                {
-                  "key": "status",
-                  "type": "text",
-                  "description": "发布状态，0.未发布，1.停止发布，2.已发布",
-                  "value": "817"
-                },
-                {
-                  "key": "cityId",
-                  "type": "text",
-                  "description": "城市id",
-                  "value": "554"
-                },
-                {
-                  "key": "regionId",
-                  "type": "text",
-                  "description": "区域id",
-                  "value": "406"
-                },
-                {
-                  "key": "keyword",
-                  "type": "text",
-                  "description": "搜索关键词",
-                  "value": "pmvum6"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/estates/list?cityId\u003d554\u0026status\u003d817\u0026pageSize\u003d10\u0026keyword\u003dpmvum6\u0026pageNo\u003d213\u0026regionId\u003d406\u0026groupId\u003d419\u0026auth\u003dtrue",
+              "raw": "https://group-estate.::focus.cn/api/estates/list?groupId=28&regionId=927&auth=true&cityId=929&status=496&pageSize=10&keyword=2jkb3h&pageNo=501",
               "protocol": "https",
               "path": [
                 "api",
@@ -3232,7 +2631,7 @@
               "query": [
                 {
                   "key": "pageNo",
-                  "value": "570",
+                  "value": "735",
                   "description": "分页当前页面，从1开始，默认1"
                 },
                 {
@@ -3242,27 +2641,27 @@
                 },
                 {
                   "key": "groupId",
-                  "value": "417",
+                  "value": "984",
                   "description": "集团id"
                 },
                 {
                   "key": "status",
-                  "value": "321",
+                  "value": "260",
                   "description": "发布状态，0.未发布，1.停止发布，2.已发布"
                 },
                 {
                   "key": "cityId",
-                  "value": "428",
+                  "value": "325",
                   "description": "城市id"
                 },
                 {
                   "key": "regionId",
-                  "value": "971",
+                  "value": "62",
                   "description": "区域id"
                 },
                 {
                   "key": "keyword",
-                  "value": "sevxnz",
+                  "value": "uh80gv",
                   "description": "搜索关键词"
                 }
               ],
@@ -3277,19 +2676,8 @@
           "name": "集团的全部楼盘列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/group/estate/list?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/api/group/estate/list?groupId=619580209",
               "protocol": "https",
               "path": [
                 "api",
@@ -3318,9 +2706,6 @@
           "name": "集团-小程序绑定关系(全部)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/api/applets/all",
               "protocol": "https",
@@ -3341,22 +2726,11 @@
           "description": "集团-小程序绑定关系(全部)"
         },
         {
-          "name": "集团-小程序(groupId-\u0026gt;appid)",
+          "name": "集团-小程序(groupId-&gt;appid)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "集团id",
-                  "value": "619580209"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/applets/group-to-applet?groupId\u003d619580209",
+              "raw": "https://group-estate.::focus.cn/api/applets/group-to-applet?groupId=619580209",
               "protocol": "https",
               "path": [
                 "api",
@@ -3375,28 +2749,17 @@
               ],
               "variable": []
             },
-            "description": "集团-小程序(groupId-\u0026gt;appid)",
+            "description": "集团-小程序(groupId-&gt;appid)",
             "header": []
           },
-          "description": "集团-小程序(groupId-\u003eappid)"
+          "description": "集团-小程序(groupId->appid)"
         },
         {
-          "name": "集团-小程序(appid-\u0026gt;groupId)",
+          "name": "集团-小程序(appid-&gt;groupId)",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "小程序appid",
-                  "value": "39"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/applets/applet-to-group?appid\u003d39",
+              "raw": "https://group-estate.::focus.cn/api/applets/applet-to-group?appid=196",
               "protocol": "https",
               "path": [
                 "api",
@@ -3409,52 +2772,23 @@
               "query": [
                 {
                   "key": "appid",
-                  "value": "39",
+                  "value": "196",
                   "description": "小程序appid"
                 }
               ],
               "variable": []
             },
-            "description": "集团-小程序(appid-\u0026gt;groupId)",
+            "description": "集团-小程序(appid-&gt;groupId)",
             "header": []
           },
-          "description": "集团-小程序(appid-\u003egroupId)"
+          "description": "集团-小程序(appid->groupId)"
         },
         {
           "name": "顾问分享楼盘信息",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "groupId",
-                  "type": "text",
-                  "description": "  集团id",
-                  "value": "619580209"
-                },
-                {
-                  "key": "estateId",
-                  "type": "text",
-                  "description": " 楼盘id",
-                  "value": "2"
-                },
-                {
-                  "key": "brokerTel",
-                  "type": "text",
-                  "description": "分享顾问手机号",
-                  "value": "18674088909"
-                },
-                {
-                  "key": "isHyaline",
-                  "type": "text",
-                  "description": "码是否是透明背景，默认true",
-                  "value": "true"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/api/estates/broker-share-info?groupId\u003d619580209\u0026isHyaline\u003dtrue\u0026brokerTel\u003d18674088909\u0026estateId\u003d2",
+              "raw": "https://group-estate.::focus.cn/api/estates/broker-share-info?isHyaline=true&estateId=2&groupId=619580209&brokerTel=18674088909",
               "protocol": "https",
               "path": [
                 "api",
@@ -3502,9 +2836,6 @@
           "name": "楼盘信息变更",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/topic/estate-change",
               "protocol": "https",
@@ -3521,15 +2852,12 @@
             "description": "楼盘信息变更",
             "header": []
           },
-          "description": "Topic:\u003cstrong\u003e\u0026nbsp;estate-change\u003c/strong\u003e，除正式环境外，需加上环境后缀(\u003cstrong\u003e-test\u003c/strong\u003e,\u003cstrong\u003e-dev\u003c/strong\u003e等)"
+          "description": "Topic:<strong>&nbsp;estate-change</strong>，除正式环境外，需加上环境后缀(<strong>-test</strong>,<strong>-dev</strong>等)"
         },
         {
           "name": "楼盘操作日志",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata"
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/topic/operation-log",
               "protocol": "https",
@@ -3546,7 +2874,7 @@
             "description": "楼盘操作日志",
             "header": []
           },
-          "description": "Topic:\u003cstrong\u003e\u0026nbsp;operation-log\u003c/strong\u003e，除正式环境外，需加上环境后缀(\u003cstrong\u003e-test\u003c/strong\u003e,\u003cstrong\u003e-dev\u003c/strong\u003e等)"
+          "description": "Topic:<strong>&nbsp;operation-log</strong>，除正式环境外，需加上环境后缀(<strong>-test</strong>,<strong>-dev</strong>等)"
         }
       ]
     },
@@ -3557,17 +2885,6 @@
           "name": "模拟审核通过",
           "request": {
             "method": "POST",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/applet/audit/success",
               "protocol": "https",
@@ -3598,23 +2915,6 @@
           "name": "模拟审核驳回",
           "request": {
             "method": "POST",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "     appid",
-                  "value": "wx210adb39fc36b767"
-                },
-                {
-                  "key": "failReason",
-                  "type": "text",
-                  "description": "驳回原因",
-                  "value": "驳回原因，点此修改"
-                }
-              ]
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/applet/audit/fail",
               "protocol": "https",
@@ -3650,19 +2950,8 @@
           "name": "获取体验版二维码",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/tool/applet/qrcode/trial?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/tool/applet/qrcode/trial?appid=wx4cb86b174348464b",
               "protocol": "https",
               "path": [
                 "tool",
@@ -3676,7 +2965,7 @@
               "query": [
                 {
                   "key": "appid",
-                  "value": "wx210adb39fc36b767",
+                  "value": "wx4cb86b174348464b",
                   "description": "appid"
                 }
               ],
@@ -3701,7 +2990,7 @@
               }
             },
             "url": {
-              "raw": "https://group-estate.::focus.cn/tool/applet/bind-tester?appid\u003dwx210adb39fc36b767",
+              "raw": "https://group-estate.::focus.cn/tool/applet/bind-tester?appid=wx4cb86b174348464b",
               "protocol": "https",
               "path": [
                 "tool",
@@ -3714,7 +3003,7 @@
               "query": [
                 {
                   "key": "appid",
-                  "value": "wx210adb39fc36b767",
+                  "value": "wx4cb86b174348464b",
                   "description": "appid"
                 }
               ],
@@ -3729,29 +3018,6 @@
           "name": "提交模板代码到体验版",
           "request": {
             "method": "POST",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "     appid",
-                  "value": "wx210adb39fc36b767"
-                },
-                {
-                  "key": "templateId",
-                  "type": "text",
-                  "description": "模版id，不传或传0 则提交最新模版",
-                  "value": "0"
-                },
-                {
-                  "key": "select",
-                  "type": "text",
-                  "description": "    是否同时选中模版，默认false，提审接口只会使用选中的模版",
-                  "value": "false"
-                }
-              ]
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/applet/commit",
               "protocol": "https",
@@ -3766,7 +3032,7 @@
               "query": [
                 {
                   "key": "appid",
-                  "value": "wx210adb39fc36b767",
+                  "value": "wx4cb86b174348464b",
                   "description": "     appid"
                 },
                 {
@@ -3791,19 +3057,8 @@
           "name": "代码模板列表",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "type",
-                  "type": "text",
-                  "description": "type，4:营销小程序，5:顾问小程序，不传返回全部",
-                  "value": "4"
-                }
-              ]
-            },
             "url": {
-              "raw": "https://group-estate.::focus.cn/tool/applet/template-list?type\u003d4",
+              "raw": "https://group-estate.::focus.cn/tool/applet/template-list?type=5",
               "protocol": "https",
               "path": [
                 "tool",
@@ -3816,7 +3071,7 @@
               "query": [
                 {
                   "key": "type",
-                  "value": "4",
+                  "value": "5",
                   "description": "type，4:营销小程序，5:顾问小程序，不传返回全部"
                 }
               ],
@@ -3828,26 +3083,9 @@
           "description": "提审只提交已选中的模板"
         },
         {
-          "name": "选中模版",
+          "name": "选中业务线模版",
           "request": {
             "method": "POST",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "type",
-                  "type": "text",
-                  "description": "      type，4:营销小程序，5:顾问小程序",
-                  "value": "4"
-                },
-                {
-                  "key": "templateId",
-                  "type": "text",
-                  "description": "模板id，代码模板列表接口可获取到",
-                  "value": "110"
-                }
-              ]
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/applet/select-template",
               "protocol": "https",
@@ -3862,7 +3100,7 @@
               "query": [
                 {
                   "key": "type",
-                  "value": "4",
+                  "value": "5",
                   "description": "      type，4:营销小程序，5:顾问小程序"
                 },
                 {
@@ -3873,26 +3111,15 @@
               ],
               "variable": []
             },
-            "description": "选中模版",
+            "description": "选中业务线模版",
             "header": []
           },
           "description": "提审只提交已选中的模板"
         },
         {
-          "name": "系统更新自动提审",
+          "name": "提审选中的模版",
           "request": {
             "method": "POST",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/applet/audit",
               "protocol": "https",
@@ -3907,32 +3134,26 @@
               "query": [
                 {
                   "key": "appid",
-                  "value": "wx210adb39fc36b767",
-                  "description": "appid"
+                  "value": "wx4cb86b174348464b",
+                  "description": "      appid"
+                },
+                {
+                  "key": "versionDesc",
+                  "value": "test phone:13300000000, test sms code:test",
+                  "description": "顾问提审附加内容"
                 }
               ],
               "variable": []
             },
-            "description": "系统更新自动提审",
+            "description": "提审选中的模版",
             "header": []
           },
-          "description": "迭代发版提审调此接口，提交已选中的模板，营销小程序会提交已过审的tabbar"
+          "description": "迭代发版提审调此接口，提交已选中的模板，营销小程序会提交已过审的tabbar，审核通过会自动发布"
         },
         {
           "name": "撤回提审",
           "request": {
             "method": "POST",
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "appid",
-                  "type": "text",
-                  "description": "appid",
-                  "value": "wx210adb39fc36b767"
-                }
-              ]
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/applet/retrieve",
               "protocol": "https",
@@ -3947,7 +3168,7 @@
               "query": [
                 {
                   "key": "appid",
-                  "value": "wx210adb39fc36b767",
+                  "value": "wx4cb86b174348464b",
                   "description": "appid"
                 }
               ],
@@ -3962,10 +3183,6 @@
           "name": "顾问小程序授权",
           "request": {
             "method": "GET",
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
               "raw": "https://group-estate.::focus.cn/tool/auth/broker",
               "protocol": "https",

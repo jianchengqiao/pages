@@ -472,11 +472,11 @@ api[16].list.push({
 });
 api[16].list.push({
     order: '7',
-    desc: '选中模版',
+    desc: '选中业务线模版',
 });
 api[16].list.push({
     order: '8',
-    desc: '系统更新自动提审',
+    desc: '提审选中的模版',
 });
 api[16].list.push({
     order: '9',
