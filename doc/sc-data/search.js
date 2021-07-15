@@ -47,11 +47,11 @@ api[1].list.push({
 });
 api[1].list.push({
     order: '4',
-    desc: '调整归属顾问',
+    desc: '清除提示',
 });
 api[1].list.push({
     order: '5',
-    desc: '编辑基本资料',
+    desc: '调整归属顾问',
 });
 api[1].list.push({
     order: '6',
@@ -59,19 +59,69 @@ api[1].list.push({
 });
 api[1].list.push({
     order: '7',
-    desc: '获取记录列表',
+    desc: '编辑基本资料',
 });
 api[1].list.push({
     order: '8',
+    desc: '获取记录列表',
+});
+api[1].list.push({
+    order: '9',
     desc: '获取记录详情',
 });
 api.push({
-    alias: 'dict',
+    alias: 'ToolController',
     order: '3',
+    link: '工具箱',
+    desc: '工具箱',
+    list: []
+})
+api[2].list.push({
+    order: '1',
+    desc: '模拟推送客户',
+});
+api.push({
+    alias: 'error',
+    order: '4',
+    link: 'error_code_list',
+    desc: '错误码列表',
+    list: []
+})
+api.push({
+    alias: 'dict',
+    order: '5',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
+api[4].list.push({
+    order: '1',
+    desc: '获取来源',
+});
+api[4].list.push({
+    order: '2',
+    desc: '获取方式',
+});
+api[4].list.push({
+    order: '3',
+    desc: '标记',
+});
+api[4].list.push({
+    order: '4',
+    desc: '看房状态',
+});
+api[4].list.push({
+    order: '5',
+    desc: '客户意向',
+});
+api[4].list.push({
+    order: '6',
+    desc: '排序方式',
+});
+api[4].list.push({
+    order: '7',
+    desc: '性别',
+});
 document.onkeydown = keyDownSearch;
 function keyDownSearch(e) {
     const theEvent = e;
