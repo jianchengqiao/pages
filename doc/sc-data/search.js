@@ -59,7 +59,7 @@ api[1].list.push({
 });
 api[1].list.push({
     order: '7',
-    desc: '编辑基本资料',
+    desc: '修正客户资料',
 });
 api[1].list.push({
     order: '8',
@@ -116,10 +116,14 @@ api[4].list.push({
 });
 api[4].list.push({
     order: '6',
-    desc: '排序方式',
+    desc: '获取类型',
 });
 api[4].list.push({
     order: '7',
+    desc: '排序方式',
+});
+api[4].list.push({
+    order: '8',
     desc: '性别',
 });
 document.onkeydown = keyDownSearch;
