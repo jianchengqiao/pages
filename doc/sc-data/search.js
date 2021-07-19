@@ -59,7 +59,7 @@ api[1].list.push({
 });
 api[1].list.push({
     order: '7',
-    desc: '编辑基本资料',
+    desc: '校验手机号重复',
 });
 api[1].list.push({
     order: '8',
