@@ -1,161 +1,46 @@
 let api = [];
 api.push({
-    alias: 'CommonController',
+    alias: 'BrokerController',
     order: '1',
-    link: '通用接口',
-    desc: '通用接口',
+    link: 'created_by_qiao_on_2021/7/20',
+    desc: 'Created by Qiao on 2021/7/20',
     list: []
 })
 api[0].list.push({
     order: '1',
-    desc: '获取通用枚举',
+    desc: '登录前检查',
 });
 api[0].list.push({
     order: '2',
-    desc: '获取所有省份列表',
+    desc: '微信登录',
 });
 api[0].list.push({
     order: '3',
-    desc: '获取省份下的城市列表',
+    desc: '发送短信验证码',
 });
 api[0].list.push({
     order: '4',
-    desc: '获取城市下的区县列表',
+    desc: '手机验证码登录',
 });
 api[0].list.push({
     order: '5',
-    desc: '获取所有城市列表',
+    desc: '获取顾问项目列表',
 });
-api.push({
-    alias: 'ClientController',
-    order: '2',
-    link: '后台-客户管理',
-    desc: '后台-客户管理',
-    list: []
-})
-api[1].list.push({
-    order: '1',
-    desc: '客户列表',
-});
-api[1].list.push({
-    order: '2',
-    desc: '导出客户列表',
-});
-api[1].list.push({
-    order: '3',
-    desc: '客户详情',
-});
-api[1].list.push({
-    order: '4',
-    desc: '清除提示',
-});
-api[1].list.push({
-    order: '5',
-    desc: '调整归属顾问',
-});
-api[1].list.push({
+api[0].list.push({
     order: '6',
-    desc: '编辑基本资料',
+    desc: '切换项目',
 });
-api[1].list.push({
+api[0].list.push({
     order: '7',
-    desc: '校验手机号重复',
+    desc: '编辑头像姓名',
 });
-api[1].list.push({
-    order: '8',
-    desc: '获取记录列表',
-});
-api[1].list.push({
-    order: '9',
-    desc: '获取记录详情',
-});
-api[1].list.push({
-    order: '10',
-    desc: '修正客户资料',
-});
-api.push({
-    alias: 'TraceController',
-    order: '3',
-    link: '',
-    desc: '',
-    list: []
-})
-api[2].list.push({
-    order: '1',
-    desc: '',
-});
-api[2].list.push({
-    order: '2',
-    desc: '',
-});
-api[2].list.push({
-    order: '3',
-    desc: '',
-});
-api.push({
-    alias: 'AppletClientController',
-    order: '4',
-    link: '跟客宝-客户管理',
-    desc: '跟客宝-客户管理',
-    list: []
-})
-api.push({
-    alias: 'ToolController',
-    order: '5',
-    link: '工具箱',
-    desc: '工具箱',
-    list: []
-})
-api[4].list.push({
-    order: '1',
-    desc: '模拟推送客户',
-});
-api.push({
-    alias: 'error',
-    order: '6',
-    link: 'error_code_list',
-    desc: '错误码列表',
-    list: []
-})
 api.push({
     alias: 'dict',
-    order: '7',
+    order: '2',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[6].list.push({
-    order: '1',
-    desc: '获取来源',
-});
-api[6].list.push({
-    order: '2',
-    desc: '获取方式',
-});
-api[6].list.push({
-    order: '3',
-    desc: '标记',
-});
-api[6].list.push({
-    order: '4',
-    desc: '看房状态',
-});
-api[6].list.push({
-    order: '5',
-    desc: '客户意向',
-});
-api[6].list.push({
-    order: '6',
-    desc: '获取类型',
-});
-api[6].list.push({
-    order: '7',
-    desc: '排序方式',
-});
-api[6].list.push({
-    order: '8',
-    desc: '性别',
-});
 document.onkeydown = keyDownSearch;
 function keyDownSearch(e) {
     const theEvent = e;
