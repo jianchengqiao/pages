@@ -26,6 +26,10 @@ api[0].list.push({
     order: '5',
     desc: '获取所有城市列表',
 });
+api[0].list.push({
+    order: '6',
+    desc: '获取所有省-市树',
+});
 api.push({
     alias: 'ClientController',
     order: '2',
