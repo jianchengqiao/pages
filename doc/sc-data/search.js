@@ -105,59 +105,78 @@ api[2].list.push({
     desc: '新增跟进',
 });
 api.push({
-    alias: 'ToolController',
+    alias: 'ClientStatisticController',
     order: '4',
+    link: '跟客宝-首页统计',
+    desc: '跟客宝-首页统计',
+    list: []
+})
+api[3].list.push({
+    order: '1',
+    desc: '首页统计概览',
+});
+api[3].list.push({
+    order: '2',
+    desc: '获取环形图',
+});
+api[3].list.push({
+    order: '3',
+    desc: '获取柱状图',
+});
+api.push({
+    alias: 'ToolController',
+    order: '5',
     link: '工具箱',
     desc: '工具箱',
     list: []
 })
-api[3].list.push({
+api[4].list.push({
     order: '1',
     desc: '模拟推送客户',
 });
 api.push({
     alias: 'error',
-    order: '5',
+    order: '6',
     link: 'error_code_list',
     desc: '错误码列表',
     list: []
 })
 api.push({
     alias: 'dict',
-    order: '6',
+    order: '7',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[5].list.push({
+api[6].list.push({
     order: '1',
     desc: '获取来源',
 });
-api[5].list.push({
+api[6].list.push({
     order: '2',
     desc: '获取方式',
 });
-api[5].list.push({
+api[6].list.push({
     order: '3',
     desc: '标记',
 });
-api[5].list.push({
+api[6].list.push({
     order: '4',
     desc: '看房状态',
 });
-api[5].list.push({
+api[6].list.push({
     order: '5',
     desc: '客户意向',
 });
-api[5].list.push({
+api[6].list.push({
     order: '6',
     desc: '获取类型',
 });
-api[5].list.push({
+api[6].list.push({
     order: '7',
     desc: '排序方式',
 });
-api[5].list.push({
+api[6].list.push({
     order: '8',
     desc: '性别',
 });
