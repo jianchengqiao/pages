@@ -74,85 +74,86 @@ api[1].list.push({
     desc: '修正客户资料',
 });
 api.push({
-    alias: 'TraceController',
-    order: '3',
-    link: '',
-    desc: '',
-    list: []
-})
-api[2].list.push({
-    order: '1',
-    desc: '',
-});
-api[2].list.push({
-    order: '2',
-    desc: '',
-});
-api[2].list.push({
-    order: '3',
-    desc: '',
-});
-api.push({
     alias: 'AppletClientController',
-    order: '4',
+    order: '3',
     link: '跟客宝-客户管理',
     desc: '跟客宝-客户管理',
     list: []
 })
+api[2].list.push({
+    order: '1',
+    desc: '客户列表(含搜索)',
+});
+api[2].list.push({
+    order: '2',
+    desc: '客户详情(含tag)',
+});
+api[2].list.push({
+    order: '3',
+    desc: '修改备注',
+});
+api[2].list.push({
+    order: '4',
+    desc: '完善资料',
+});
+api[2].list.push({
+    order: '5',
+    desc: '新增跟进',
+});
 api.push({
     alias: 'ToolController',
-    order: '5',
+    order: '4',
     link: '工具箱',
     desc: '工具箱',
     list: []
 })
-api[4].list.push({
+api[3].list.push({
     order: '1',
     desc: '模拟推送客户',
 });
 api.push({
     alias: 'error',
-    order: '6',
+    order: '5',
     link: 'error_code_list',
     desc: '错误码列表',
     list: []
 })
 api.push({
     alias: 'dict',
-    order: '7',
+    order: '6',
     link: 'dict_list',
     desc: '数据字典',
     list: []
 })
-api[6].list.push({
+api[5].list.push({
     order: '1',
     desc: '获取来源',
 });
-api[6].list.push({
+api[5].list.push({
     order: '2',
     desc: '获取方式',
 });
-api[6].list.push({
+api[5].list.push({
     order: '3',
     desc: '标记',
 });
-api[6].list.push({
+api[5].list.push({
     order: '4',
     desc: '看房状态',
 });
-api[6].list.push({
+api[5].list.push({
     order: '5',
     desc: '客户意向',
 });
-api[6].list.push({
+api[5].list.push({
     order: '6',
     desc: '获取类型',
 });
-api[6].list.push({
+api[5].list.push({
     order: '7',
     desc: '排序方式',
 });
-api[6].list.push({
+api[5].list.push({
     order: '8',
     desc: '性别',
 });
