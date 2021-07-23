@@ -16,22 +16,30 @@ api[0].list.push({
 });
 api[0].list.push({
     order: '3',
-    desc: '发送短信验证码',
+    desc: '获取滑块验证码',
 });
 api[0].list.push({
     order: '4',
-    desc: '手机验证码登录',
+    desc: '发送短信验证码',
 });
 api[0].list.push({
     order: '5',
-    desc: '获取顾问项目列表',
+    desc: '手机验证码登录',
 });
 api[0].list.push({
     order: '6',
-    desc: '切换项目',
+    desc: '获取顾问项目列表',
 });
 api[0].list.push({
     order: '7',
+    desc: '切换项目',
+});
+api[0].list.push({
+    order: '8',
+    desc: '获取个人信息',
+});
+api[0].list.push({
+    order: '9',
     desc: '编辑头像姓名',
 });
 api.push({

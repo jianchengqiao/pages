@@ -113,15 +113,15 @@ api.push({
 })
 api[3].list.push({
     order: '1',
-    desc: '首页统计概览',
+    desc: '首页统计(含图表)',
 });
 api[3].list.push({
     order: '2',
-    desc: '获取环形图',
+    desc: '单独获取环形图',
 });
 api[3].list.push({
     order: '3',
-    desc: '获取柱状图',
+    desc: '单独获取柱状图',
 });
 api.push({
     alias: 'ToolController',
@@ -179,6 +179,14 @@ api[6].list.push({
 api[6].list.push({
     order: '8',
     desc: '性别',
+});
+api[6].list.push({
+    order: '9',
+    desc: '环形图类型',
+});
+api[6].list.push({
+    order: '10',
+    desc: '柱状图单位',
 });
 document.onkeydown = keyDownSearch;
 function keyDownSearch(e) {
