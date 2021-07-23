@@ -20,31 +20,46 @@ api[0].list.push({
 });
 api[0].list.push({
     order: '4',
-    desc: '发送短信验证码',
+    desc: '验证滑块验证码',
 });
 api[0].list.push({
     order: '5',
-    desc: '手机验证码登录',
+    desc: '发送短信验证码',
 });
 api[0].list.push({
     order: '6',
-    desc: '获取顾问项目列表',
+    desc: '手机验证码登录',
 });
 api[0].list.push({
     order: '7',
-    desc: '切换项目',
+    desc: '获取顾问项目列表',
 });
 api[0].list.push({
     order: '8',
-    desc: '获取个人信息',
+    desc: '切换项目',
 });
 api[0].list.push({
     order: '9',
+    desc: '获取个人信息',
+});
+api[0].list.push({
+    order: '10',
     desc: '编辑头像姓名',
 });
 api.push({
-    alias: 'dict',
+    alias: 'BrokerCommonController',
     order: '2',
+    link: 'created_by_qiao_on_2021/7/23',
+    desc: 'Created by Qiao on 2021/7/23',
+    list: []
+})
+api[1].list.push({
+    order: '1',
+    desc: '图片、文本安全识别',
+});
+api.push({
+    alias: 'dict',
+    order: '3',
     link: 'dict_list',
     desc: '数据字典',
     list: []
