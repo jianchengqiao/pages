@@ -1,9 +1,9 @@
 let api = [];
 api.push({
-    alias: 'CommonController',
+    alias: 'debug',
     order: '1',
-    link: '通用接口',
     desc: '通用接口',
+    link: '通用接口',
     list: []
 })
 api[0].list.push({
@@ -33,8 +33,8 @@ api[0].list.push({
 api.push({
     alias: 'ClientController',
     order: '2',
-    link: '后台-客户管理',
     desc: '后台-客户管理',
+    link: '后台-客户管理',
     list: []
 })
 api[1].list.push({
@@ -80,8 +80,8 @@ api[1].list.push({
 api.push({
     alias: 'AppletClientController',
     order: '3',
-    link: '跟客宝-客户管理',
     desc: '跟客宝-客户管理',
+    link: '跟客宝-客户管理',
     list: []
 })
 api[2].list.push({
@@ -107,8 +107,8 @@ api[2].list.push({
 api.push({
     alias: 'ClientStatisticController',
     order: '4',
-    link: '跟客宝-首页统计',
     desc: '跟客宝-首页统计',
+    link: '跟客宝-首页统计',
     list: []
 })
 api[3].list.push({
@@ -126,8 +126,8 @@ api[3].list.push({
 api.push({
     alias: 'ToolController',
     order: '5',
-    link: '工具箱',
     desc: '工具箱',
+    link: '工具箱',
     list: []
 })
 api[4].list.push({
@@ -137,15 +137,15 @@ api[4].list.push({
 api.push({
     alias: 'error',
     order: '6',
-    link: 'error_code_list',
     desc: '错误码列表',
+    link: 'error_code_list',
     list: []
 })
 api.push({
     alias: 'dict',
     order: '7',
-    link: 'dict_list',
     desc: '数据字典',
+    link: 'dict_list',
     list: []
 })
 api[6].list.push({
@@ -204,6 +204,7 @@ function keyDownSearch(e) {
                     order: apiData.order,
                     desc: apiData.desc,
                     link: apiData.link,
+                    alias: apiData.alias,
                     list: apiData.list
                 });
             } else {
@@ -221,6 +222,7 @@ function keyDownSearch(e) {
                     const data = {
                         order: apiData.order,
                         desc: apiData.desc,
+                        alias: apiData.alias,
                         link: apiData.link,
                         list: methodListTemp
                     };
@@ -263,13 +265,13 @@ function buildAccordion(apiData, liClass, display) {
     let html = "";
     let doc;
     if (apiData.length > 0) {
-        for (let j = 0; j < apiData.length; j++) {
+         for (let j = 0; j < apiData.length; j++) {
             html += '<li class="'+liClass+'">';
-            html += '<a class="dd" href="#_' + apiData[j].link + '">' + apiData[j].order + '.&nbsp;' + apiData[j].desc + '</a>';
+            html += '<a class="dd" href="' + apiData[j].alias + '.html#header">' + apiData[j].order + '.&nbsp;' + apiData[j].desc + '</a>';
             html += '<ul class="sectlevel2" style="'+display+'">';
             doc = apiData[j].list;
             for (let m = 0; m < doc.length; m++) {
-                html += '<li><a href="#_' + apiData[j].order + '_' + doc[m].order + '_' + doc[m].desc + '">' + apiData[j].order + '.' + doc[m].order + '.&nbsp;' + doc[m].desc + '</a> </li>';
+                html += '<li><a href="' + apiData[j].alias + '.html#_' + apiData[j].order + '_' + doc[m].order + '_' + doc[m].desc + '">' + apiData[j].order + '.' + doc[m].order + '.&nbsp;' + doc[m].desc + '</a> </li>';
             }
             html += '</ul>';
             html += '</li>';
